@@ -223,12 +223,12 @@ Where you can buy, sell, or trade Nimiq:
 ### Mainnet
 
 - **[Nimiq Watch Mainnet](https://rpc.nimiqwatch.com)** ([@sisou](https://github.com/sisou))
-  Public RPC server operated by NimiqWatch for mainnet access
+  Public RPC server. No uptime guarantees.
 
 ### Testnet
 
 - **[Nimiq Watch Testnet](https://rpc.testnet.nimiqwatch.com/)** ([@sisou](https://github.com/sisou))
-  Public RPC server operated by NimiqWatch for testnet access
+  Public RPC server. No uptime guarantees.
 
 <!-- /automd -->
 

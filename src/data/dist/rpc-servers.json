@@ -6,7 +6,7 @@
       "maintainer": "sisou",
       "statusLink": null,
       "network": "mainnet",
-      "description": "Public RPC server operated by NimiqWatch for mainnet access"
+      "description": "Public RPC server. No uptime guarantees."
     }
   ],
   "testnet": [
@@ -16,7 +16,7 @@
       "maintainer": "sisou",
       "statusLink": null,
       "network": "testnet",
-      "description": "Public RPC server operated by NimiqWatch for testnet access"
+      "description": "Public RPC server. No uptime guarantees."
     }
   ]
 }
