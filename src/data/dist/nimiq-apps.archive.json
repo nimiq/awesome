@@ -4,8 +4,8 @@
     "description": "The easiest way to buy and sell BTC, NIM etc. Without registration, at low fees and super easy to use.  Buy and sell directly to your bank account Available without sign-up",
     "link": "https://nimiq.co/supersimpleswap/",
     "type": "Infrastructure",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/supersimpleswap.svg",
-    "screenshot": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/supersimpleswap.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/supersimpleswap.svg",
+    "screenshot": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/supersimpleswap.svg",
     "developer": "@nimiq",
     "slug": "supersimpleswap"
   },
@@ -14,7 +14,7 @@
     "description": "Nimiq Vouchers is developed, maintained and hosted by the Nimiq community. You can buy all kinds of gift cards and vouchers using your NIM. The shop uses Nimiq's CryptoPayment.link to process your payment in NIM.",
     "link": "https://nimiqvouchers.com/",
     "type": "E-commerce",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/nimiq-voucher.webp",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/nimiq-voucher.webp",
     "screenshot": "",
     "developer": "Paul",
     "slug": "nimiq-vouchers"
@@ -24,7 +24,7 @@
     "description": "Nimiq Blockchain Explorer.",
     "link": "https://nimiq.mopsus.com/",
     "type": "Insights",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/nimiq-mopsus.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/nimiq-mopsus.svg",
     "screenshot": "",
     "developer": "Ken Blazer",
     "slug": "nimiq-mopsus"
@@ -34,7 +34,7 @@
     "description": "Participate in securing the Network and get NIM for mined blocks.",
     "link": "https://miner.nimiq.com",
     "type": "Miner",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/web-miner.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/web-miner.svg",
     "screenshot": "",
     "developer": "@nimiq",
     "slug": "web-miner"
@@ -44,7 +44,7 @@
     "description": "Philanthropic project to raise awareness about Nimiq in Venezuela.",
     "link": "https://nimizuela.org/",
     "type": "Promotion",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/project-nimizuela.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/project-nimizuela.svg",
     "screenshot": "",
     "developer": "Project Nimizuela",
     "slug": "project-nimizuela"
@@ -54,7 +54,7 @@
     "description": "Simple and Flexible Payments Gateway.",
     "link": "https://nimipay.com/",
     "type": "E-commerce",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/nimipay.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/nimipay.svg",
     "screenshot": "",
     "developer": "Nimipay",
     "slug": "nimipay"
@@ -64,7 +64,7 @@
     "description": "Mine faster with Albermonte's Miner for desktop and servers, supporting NVidia and AMD GPUs.",
     "link": "https://hub.shortnim.me/",
     "type": "Miner",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/desktop-miner.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/desktop-miner.svg",
     "screenshot": "",
     "developer": "@albermonte",
     "slug": "albermontes-miner"
@@ -74,7 +74,7 @@
     "description": "Collection of online utilities on the Nimiq Blockchain.",
     "link": "https://nini.smitop.com/",
     "type": "Infrastructure",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/nini.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/nini.svg",
     "screenshot": "",
     "developer": "Smitop",
     "slug": "nini"
@@ -84,7 +84,7 @@
     "description": "Wordpress mining plugin for content monetization.",
     "link": "https://github.com/pom75/nimiqWP",
     "type": "Miner",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/web-miner.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/web-miner.svg",
     "screenshot": "",
     "developer": "@Eligioo",
     "slug": "nimiq-wp"
@@ -94,7 +94,7 @@
     "description": "Mining client with improved performance.",
     "link": "",
     "type": "Miner",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/desktop-miner.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/desktop-miner.svg",
     "screenshot": "",
     "developer": "@nimiq",
     "slug": "desktop-miner"
@@ -104,7 +104,7 @@
     "description": "URL shortener with integrated miner for content monetization.",
     "link": "https://shortnim.vercel.app/",
     "type": "Miner",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/short-nim.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/short-nim.svg",
     "screenshot": "",
     "developer": "@albermonte",
     "slug": "short-nim"
@@ -114,7 +114,7 @@
     "description": "Send NIM transactions via Telegram.",
     "link": "https://t.me/PayNimBot",
     "type": "Bots",
-    "logo": "https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/archive/assets/paynim-telegram-bot.svg",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/paynim-telegram-bot.svg",
     "screenshot": "",
     "developer": "PayNim",
     "slug": "paynim-telegram-bot"

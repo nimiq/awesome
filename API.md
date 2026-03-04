@@ -6,20 +6,20 @@ You can use this repository as a data source by making HTTP requests to the dist
 
 **Apps & Wallets:**
 ```
-https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/dist/nimiq-apps.json
+https://raw.githubusercontent.com/nimiq/awesome/main/src/data/dist/nimiq-apps.json
 ```
 
 **Developer Resources:**
 ```
-https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/dist/nimiq-resources.json
+https://raw.githubusercontent.com/nimiq/awesome/main/src/data/dist/nimiq-resources.json
 ```
 
 **Exchanges:**
 ```
-https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/dist/nimiq-exchanges.json
+https://raw.githubusercontent.com/nimiq/awesome/main/src/data/dist/nimiq-exchanges.json
 ```
 
 **Open RPC Servers:**
 ```
-https://raw.githubusercontent.com/onmax/nimiq-awesome/main/src/data/dist/rpc-servers.json
+https://raw.githubusercontent.com/nimiq/awesome/main/src/data/dist/rpc-servers.json
 ```
