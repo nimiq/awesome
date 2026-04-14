@@ -30,6 +30,16 @@
     "featured": false
   },
   {
+    "name": "EVM Mini Wallet",
+    "url": "https://evm-mini-wallet.vercel.app",
+    "type": "evm",
+    "description": "Lightweight, mobile-first wallet for sending and receiving tokens across EVM chains",
+    "logo": "./assets/albermonte-evm-mini-wallet.svg",
+    "source": "https://github.com/Albermonte/evm-mini-wallet",
+    "developer": "@Albermonte",
+    "featured": false
+  },
+  {
     "name": "OpenSea",
     "url": "https://opensea.io",
     "type": "evm",
