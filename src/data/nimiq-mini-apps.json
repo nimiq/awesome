@@ -37,7 +37,7 @@
     "logo": "./assets/albermonte-evm-mini-wallet.svg",
     "source": "https://github.com/Albermonte/evm-mini-wallet",
     "developer": "@Albermonte",
-    "featured": false
+    "featured": true
   },
   {
     "name": "OpenSea",
