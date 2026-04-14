@@ -1,36 +1,8 @@
 [
   {
-    "name": "StealthEX",
-    "logo": "assets/exchanges/stealthex.svg",
-    "url": "https://stealthex.io/",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "Coinspot",
-    "logo": "assets/exchanges/coinspot.svg",
-    "url": "https://www.coinspot.com.au/",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "Changelly",
-    "logo": "assets/exchanges/changelly.svg",
-    "url": "https://changelly.com/",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "HitBTC",
-    "logo": "assets/exchanges/hitbtc.svg",
-    "url": "https://hitbtc.com/",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "Swapspace",
-    "logo": "assets/exchanges/swapspace.svg",
-    "url": "https://swapspace.co/",
+    "name": "AscendEX",
+    "logo": "assets/exchanges/ascendex.svg",
+    "url": "https://ascendex.com/en",
     "description": "",
     "richDescription": null
   },
@@ -42,44 +14,9 @@
     "richDescription": null
   },
   {
-    "name": "Kucoin",
-    "logo": "assets/exchanges/kucoin.svg",
-    "url": "https://www.kucoin.com/trade",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "Swapzone",
-    "logo": "assets/exchanges/swapzone.svg",
-    "url": "https://swapzone.io/",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "CoinSwitch",
-    "logo": "assets/exchanges/coinswitch.svg",
-    "url": "https://coinswitch.co/",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "Kriptomat",
-    "logo": "assets/exchanges/kriptomat.svg",
-    "url": "https://kriptomat.io/",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "AscendEX",
-    "logo": "assets/exchanges/ascendex.svg",
-    "url": "https://ascendex.com/en",
-    "description": "",
-    "richDescription": null
-  },
-  {
-    "name": "Gate.io",
-    "logo": "assets/exchanges/gate.io.svg",
-    "url": "https://gate.io/",
+    "name": "Changelly",
+    "logo": "assets/exchanges/changelly.svg",
+    "url": "https://changelly.com/",
     "description": "",
     "richDescription": null
   },
@@ -91,13 +28,6 @@
     "richDescription": null
   },
   {
-    "name": "SimpleSwap",
-    "logo": "assets/exchanges/simpleswap.svg",
-    "url": "https://simpleswap.io/",
-    "description": "",
-    "richDescription": null
-  },
-  {
     "name": "Coinpay",
     "logo": "assets/exchanges/coinpay.png",
     "url": "https://coinpay.cr/",
@@ -105,9 +35,79 @@
     "richDescription": null
   },
   {
+    "name": "Coinspot",
+    "logo": "assets/exchanges/coinspot.svg",
+    "url": "https://www.coinspot.com.au/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "CoinSwitch",
+    "logo": "assets/exchanges/coinswitch.svg",
+    "url": "https://coinswitch.co/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "Gate.io",
+    "logo": "assets/exchanges/gateio.svg",
+    "url": "https://gate.io/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "HitBTC",
+    "logo": "assets/exchanges/hitbtc.svg",
+    "url": "https://hitbtc.com/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "Kriptomat",
+    "logo": "assets/exchanges/kriptomat.svg",
+    "url": "https://kriptomat.io/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "Kucoin",
+    "logo": "assets/exchanges/kucoin.svg",
+    "url": "https://www.kucoin.com/trade",
+    "description": "",
+    "richDescription": null
+  },
+  {
     "name": "MEXC",
     "logo": "assets/exchanges/mexc.svg",
     "url": "https://www.mexc.com/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "SimpleSwap",
+    "logo": "assets/exchanges/simpleswap.svg",
+    "url": "https://simpleswap.io/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "StealthEX",
+    "logo": "assets/exchanges/stealthex.svg",
+    "url": "https://stealthex.io/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "Swapspace",
+    "logo": "assets/exchanges/swapspace.svg",
+    "url": "https://swapspace.co/",
+    "description": "",
+    "richDescription": null
+  },
+  {
+    "name": "Swapzone",
+    "logo": "assets/exchanges/swapzone.svg",
+    "url": "https://swapzone.io/",
     "description": "",
     "richDescription": null
   }
