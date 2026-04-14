@@ -20,6 +20,9 @@ importers:
       svgo:
         specifier: ^4.0.0
         version: 4.0.1
+      yaml:
+        specifier: ^2.8.3
+        version: 2.8.3
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.12.0
