@@ -1,5 +1,7 @@
 ## New Mini App Submission
 
+> Example contribution: [#1](https://github.com/nimiq/awesome/pull/1)
+
 ### App Details
 
 - **Name**: 
