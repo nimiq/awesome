@@ -37,10 +37,13 @@ function detectFillColors(svgContent: string): string[] {
   let match = fillRegex.exec(svgContent)
 
   while (match !== null) {
-    const color = match[1].toLowerCase()
-    // Skip none, transparent, currentColor
-    if (color !== 'none' && color !== 'transparent' && color !== 'currentcolor') {
-      colors.add(color)
+    const colorValue = match[1]
+    if (colorValue) {
+      const color = colorValue.toLowerCase()
+      // Skip none, transparent, currentColor
+      if (color !== 'none' && color !== 'transparent' && color !== 'currentcolor') {
+        colors.add(color)
+      }
     }
     match = fillRegex.exec(svgContent)
   }
@@ -69,8 +72,9 @@ async function optimizeSvg(filePath: string): Promise<OptimizationResult> {
   const hadSingleColor = colors.length === 1
 
   // Replace with currentColor if single color (unless excluded)
-  if (hadSingleColor && !shouldKeepColor) {
-    content = replaceWithCurrentColor(content, colors[0])
+  const singleColor = hadSingleColor ? colors[0] : undefined
+  if (singleColor && !shouldKeepColor) {
+    content = replaceWithCurrentColor(content, singleColor)
   }
 
   // Run svgo optimization (which includes cleanup)
