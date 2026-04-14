@@ -1,6 +1,6 @@
 ## New Mini App Submission
 
-> Example contribution: [#1](https://github.com/nimiq/awesome/pull/1)
+<!-- Example contribution: [#1](https://github.com/nimiq/awesome/pull/1) -->
 
 ### App Details
 
@@ -8,7 +8,7 @@
 - **URL**: 
 - **Type**: <!-- nimiq or evm -->
 - **Description**: <!-- One-line description (under 200 chars) -->
-- **Logo**: <!-- SVG file in src/data/assets/ named {developer}-{appName}.svg (e.g. nimiq-wallet.svg). Must be a simple icon that works at small sizes. Leave empty if not provided. -->
+- **Logo**: <!-- SVG file in src/data/assets/ named {developer}-{appName}.svg (e.g. albermote-nimiq-wallet.svg). Must be a simple icon that works at small sizes. Leave empty if not provided. -->
 - **Source Code**: <!-- GitHub/GitLab repo URL, or N/A -->
 - **Developer**: <!-- GitHub handle with @ prefix (e.g. @user), or N/A -->
 
