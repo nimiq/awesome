@@ -710,15 +710,36 @@ async function main() {
   const MAX_DESCRIPTION_LENGTH = 200
   let miniAppsValid = true
 
+  for (let i = 1; i < parsedMiniAppsJson.length; i++) {
+    const prevApp = parsedMiniAppsJson[i - 1]!
+    const currApp = parsedMiniAppsJson[i]!
+    if (prevApp.name.toLowerCase().localeCompare(currApp.name.toLowerCase()) > 0) {
+      consola.error(`[mini-apps] Entries are not in alphabetical order: found "${prevApp.name}" before "${currApp.name}"`)
+      miniAppsValid = false
+    }
+  }
+
   for (const miniApp of parsedMiniAppsJson) {
     if (miniApp.logo) {
       if (!miniApp.logo.endsWith('.svg')) {
         consola.error(`[${miniApp.name}] Logo must be SVG format, got: ${miniApp.logo}`)
         miniAppsValid = false
       }
-      else if (!checkPathExists(miniApp.logo, dataDir)) {
-        consola.error(`[${miniApp.name}] Logo file not found: ${miniApp.logo}`)
-        miniAppsValid = false
+      else {
+        const logoFileName = miniApp.logo.split('/').pop() ?? ''
+        const developerSlug = miniApp.developer ? generateSlug(miniApp.developer.replace(/^@/, '')) : null
+        if (developerSlug) {
+          const expectedFileName = `${developerSlug}-${generateSlug(miniApp.name)}.svg`
+          if (logoFileName !== expectedFileName) {
+            consola.error(`[${miniApp.name}] Logo must follow naming convention: "${expectedFileName}", got: "${logoFileName}"`)
+            miniAppsValid = false
+          }
+        }
+
+        if (!checkPathExists(miniApp.logo, dataDir)) {
+          consola.error(`[${miniApp.name}] Logo file not found: ${miniApp.logo}`)
+          miniAppsValid = false
+        }
       }
     }
 

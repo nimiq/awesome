@@ -13,39 +13,6 @@
       "slug": "1inch"
     },
     {
-      "name": "Uniswap",
-      "url": "https://app.uniswap.org",
-      "type": "evm",
-      "description": "Leading decentralized exchange for swapping ERC-20 tokens",
-      "logo": "",
-      "source": "https://github.com/Uniswap/v4-core",
-      "developer": null,
-      "featured": false,
-      "slug": "uniswap"
-    },
-    {
-      "name": "Polymarket",
-      "url": "https://polymarket.com",
-      "type": "evm",
-      "description": "Prediction market platform for trading on real-world event outcomes",
-      "logo": "",
-      "source": null,
-      "developer": null,
-      "featured": false,
-      "slug": "polymarket"
-    },
-    {
-      "name": "OpenSea",
-      "url": "https://opensea.io",
-      "type": "evm",
-      "description": "The largest NFT marketplace for buying, selling, and discovering digital assets",
-      "logo": "",
-      "source": null,
-      "developer": null,
-      "featured": false,
-      "slug": "opensea"
-    },
-    {
       "name": "Aave",
       "url": "https://app.aave.com",
       "type": "evm",
@@ -66,6 +33,39 @@
       "developer": null,
       "featured": false,
       "slug": "dappradar"
+    },
+    {
+      "name": "OpenSea",
+      "url": "https://opensea.io",
+      "type": "evm",
+      "description": "The largest NFT marketplace for buying, selling, and discovering digital assets",
+      "logo": "",
+      "source": null,
+      "developer": null,
+      "featured": false,
+      "slug": "opensea"
+    },
+    {
+      "name": "Polymarket",
+      "url": "https://polymarket.com",
+      "type": "evm",
+      "description": "Prediction market platform for trading on real-world event outcomes",
+      "logo": "",
+      "source": null,
+      "developer": null,
+      "featured": false,
+      "slug": "polymarket"
+    },
+    {
+      "name": "Uniswap",
+      "url": "https://app.uniswap.org",
+      "type": "evm",
+      "description": "Leading decentralized exchange for swapping ERC-20 tokens",
+      "logo": "",
+      "source": "https://github.com/Uniswap/v4-core",
+      "developer": null,
+      "featured": false,
+      "slug": "uniswap"
     }
   ]
 }

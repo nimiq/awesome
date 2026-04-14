@@ -10,36 +10,6 @@
     "featured": false
   },
   {
-    "name": "Uniswap",
-    "url": "https://app.uniswap.org",
-    "type": "evm",
-    "description": "Leading decentralized exchange for swapping ERC-20 tokens",
-    "logo": "",
-    "source": "https://github.com/Uniswap/v4-core",
-    "developer": null,
-    "featured": false
-  },
-  {
-    "name": "Polymarket",
-    "url": "https://polymarket.com",
-    "type": "evm",
-    "description": "Prediction market platform for trading on real-world event outcomes",
-    "logo": "",
-    "source": null,
-    "developer": null,
-    "featured": false
-  },
-  {
-    "name": "OpenSea",
-    "url": "https://opensea.io",
-    "type": "evm",
-    "description": "The largest NFT marketplace for buying, selling, and discovering digital assets",
-    "logo": "",
-    "source": null,
-    "developer": null,
-    "featured": false
-  },
-  {
     "name": "Aave",
     "url": "https://app.aave.com",
     "type": "evm",
@@ -56,6 +26,36 @@
     "description": "Platform for discovering and tracking decentralized applications across multiple blockchains",
     "logo": "",
     "source": null,
+    "developer": null,
+    "featured": false
+  },
+  {
+    "name": "OpenSea",
+    "url": "https://opensea.io",
+    "type": "evm",
+    "description": "The largest NFT marketplace for buying, selling, and discovering digital assets",
+    "logo": "",
+    "source": null,
+    "developer": null,
+    "featured": false
+  },
+  {
+    "name": "Polymarket",
+    "url": "https://polymarket.com",
+    "type": "evm",
+    "description": "Prediction market platform for trading on real-world event outcomes",
+    "logo": "",
+    "source": null,
+    "developer": null,
+    "featured": false
+  },
+  {
+    "name": "Uniswap",
+    "url": "https://app.uniswap.org",
+    "type": "evm",
+    "description": "Leading decentralized exchange for swapping ERC-20 tokens",
+    "logo": "",
+    "source": "https://github.com/Uniswap/v4-core",
     "developer": null,
     "featured": false
   }

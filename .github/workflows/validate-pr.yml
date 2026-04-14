@@ -1,0 +1,44 @@
+name: Validate PR
+
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Install dependencies
+        run: cd src && pnpm install
+
+      - name: Check featured flag not set
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          if git diff "origin/$BASE_REF"...HEAD -- src/data/nimiq-mini-apps.json | grep -q '^\+.*"featured": true'; then
+            echo "::error::The 'featured' flag cannot be set by contributors. Only maintainers can feature mini apps."
+            exit 1
+          fi
+
+      - name: Typecheck
+        run: cd src && pnpm run typecheck
+
+      - name: Lint
+        run: cd src && pnpm run lint
+
+      - name: Build
+        run: cd src && pnpm run build
