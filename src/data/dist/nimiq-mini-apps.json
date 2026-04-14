@@ -2,6 +2,17 @@
   "nimiq": [],
   "evm": [
     {
+      "name": "EVM Mini Wallet",
+      "url": "https://evm-mini-wallet.vercel.app",
+      "type": "evm",
+      "description": "Lightweight, mobile-first wallet for sending and receiving tokens across EVM chains",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/albermonte-evm-mini-wallet.svg",
+      "source": "https://github.com/Albermonte/evm-mini-wallet",
+      "developer": "@Albermonte",
+      "featured": true,
+      "slug": "evm-mini-wallet"
+    },
+    {
       "name": "1inch",
       "url": "https://1inch.com/",
       "type": "evm",
@@ -33,17 +44,6 @@
       "developer": null,
       "featured": false,
       "slug": "dappradar"
-    },
-    {
-      "name": "EVM Mini Wallet",
-      "url": "https://evm-mini-wallet.vercel.app",
-      "type": "evm",
-      "description": "Lightweight, mobile-first wallet for sending and receiving tokens across EVM chains",
-      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/albermonte-evm-mini-wallet.svg",
-      "source": "https://github.com/Albermonte/evm-mini-wallet",
-      "developer": "@Albermonte",
-      "featured": false,
-      "slug": "evm-mini-wallet"
     },
     {
       "name": "OpenSea",
