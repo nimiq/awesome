@@ -9,6 +9,11 @@ You can use this repository as a data source by making HTTP requests to the dist
 https://raw.githubusercontent.com/nimiq/awesome/main/src/data/dist/nimiq-apps.json
 ```
 
+**Mini Apps:**
+```
+https://raw.githubusercontent.com/nimiq/awesome/main/src/data/dist/nimiq-mini-apps.json
+```
+
 **Developer Resources:**
 ```
 https://raw.githubusercontent.com/nimiq/awesome/main/src/data/dist/nimiq-resources.json

@@ -5,7 +5,7 @@ import process from 'node:process'
 import { consola } from 'consola'
 import { $ } from 'execa'
 import { dirname, resolve } from 'pathe'
-import { array, literal, nullable, object, safeParse, string, union } from 'valibot'
+import { array, boolean, literal, nullable, object, safeParse, string, union } from 'valibot'
 import { optimizeAssets } from './optimize-assets.js'
 
 const __dirname = dirname('.')
@@ -16,6 +16,7 @@ const nimiqAppArchiveJson = resolve(dataDir, 'archive/nimiq-apps.archive.json')
 const nimiqExchangesJson = resolve(dataDir, 'nimiq-exchanges.json')
 const nimiqExplorersJson = resolve(dataDir, 'nimiq-explorers.json')
 const nimiqRpcServersJson = resolve(dataDir, 'nimiq-rpc-servers.json')
+const nimiqMiniAppsJson = resolve(dataDir, 'nimiq-mini-apps.json')
 const exchangeLogosDir = resolve(dataDir, 'assets/exchanges')
 
 try {
@@ -230,6 +231,34 @@ const ExplorerSchema = object({
   developer: nullable(string()),
   network: NetworkTypeSchema,
 })
+
+type MiniAppType = 'nimiq' | 'evm'
+
+interface MiniApp {
+  name: string
+  url: string
+  type: MiniAppType
+  description: string
+  logo: string
+  source: string | null
+  developer: string | null
+  featured: boolean
+}
+
+const MiniAppTypeSchema = union([literal('nimiq'), literal('evm')])
+
+const MiniAppSchema = object({
+  name: string(),
+  url: string(),
+  type: MiniAppTypeSchema,
+  description: string(),
+  logo: string(),
+  source: nullable(string()),
+  developer: nullable(string()),
+  featured: boolean(),
+})
+
+const MiniAppArraySchema = array(MiniAppSchema)
 
 const json = readFileSync(nimiqAppJson, 'utf-8')
 const jsonArchive = readFileSync(nimiqAppArchiveJson, 'utf-8')
@@ -663,6 +692,110 @@ async function main() {
   const distExplorersJsonPath = resolve(distFolder, 'nimiq-explorers.json')
   writeFileSync(distExplorersJsonPath, JSON.stringify(distExplorers, null, 2))
   consola.success(`Distribution JSON for explorers generated at ${distExplorersJsonPath}`)
+
+  // Process mini apps
+  const miniAppsJson = readFileSync(nimiqMiniAppsJson, 'utf-8')
+  const parsedMiniAppsJson = JSON.parse(miniAppsJson) as MiniApp[]
+
+  const miniAppsValidationResult = safeParse(MiniAppArraySchema, parsedMiniAppsJson)
+  if (!miniAppsValidationResult.success) {
+    consola.error('Mini apps JSON validation failed')
+    consola.error(miniAppsValidationResult.issues)
+    process.exit(1)
+  }
+  else {
+    consola.success('Mini apps JSON validation successful')
+  }
+
+  const MAX_DESCRIPTION_LENGTH = 200
+  let miniAppsValid = true
+
+  for (const miniApp of parsedMiniAppsJson) {
+    if (miniApp.logo) {
+      if (!miniApp.logo.endsWith('.svg')) {
+        consola.error(`[${miniApp.name}] Logo must be SVG format, got: ${miniApp.logo}`)
+        miniAppsValid = false
+      }
+      else if (!checkPathExists(miniApp.logo, dataDir)) {
+        consola.error(`[${miniApp.name}] Logo file not found: ${miniApp.logo}`)
+        miniAppsValid = false
+      }
+    }
+
+    if (!miniApp.name.trim()) {
+      consola.error(`[mini-app] Name must not be empty`)
+      miniAppsValid = false
+    }
+
+    if (miniApp.description.length > MAX_DESCRIPTION_LENGTH) {
+      consola.error(`[${miniApp.name}] Description is ${miniApp.description.length} chars, max is ${MAX_DESCRIPTION_LENGTH}`)
+      miniAppsValid = false
+    }
+
+    if (!miniApp.url.startsWith('https://')) {
+      consola.error(`[${miniApp.name}] URL must start with https://, got: ${miniApp.url}`)
+      miniAppsValid = false
+    }
+
+    if (miniApp.source && !miniApp.source.startsWith('https://')) {
+      consola.error(`[${miniApp.name}] Source URL must start with https://, got: ${miniApp.source}`)
+      miniAppsValid = false
+    }
+  }
+
+  if (!allPathsValid || !miniAppsValid) {
+    consola.error('Mini app validation failed')
+    process.exit(1)
+  }
+
+  const featuredFirst = (a: MiniApp, b: MiniApp) => {
+    if (a.featured !== b.featured)
+      return a.featured ? -1 : 1
+    return 0
+  }
+
+  const nimiqMiniApps = parsedMiniAppsJson.filter(app => app.type === 'nimiq').sort(featuredFirst)
+  const evmMiniApps = parsedMiniAppsJson.filter(app => app.type === 'evm').sort(featuredFirst)
+
+  function formatMiniAppLine(app: MiniApp): string {
+    const featured = app.featured ? '⭐ ' : ''
+    const sourceLink = app.source ? ` ([Source](${app.source}))` : ''
+    const developerLink = app.developer ? ` (${getAuthorLink(app.developer)})` : ''
+    return `- ${featured}[${app.name}](${app.url})${sourceLink}${developerLink}: ${app.description}\n`
+  }
+
+  let miniAppsMarkdown = '## Mini Apps\n'
+
+  miniAppsMarkdown += '\n### Nimiq\n\n'
+  if (nimiqMiniApps.length === 0) {
+    miniAppsMarkdown += '> Your mini app could be here! [Submit a PR](https://github.com/nimiq/awesome/compare?template=mini-app.md) to add your Nimiq mini app.\n'
+  }
+  else {
+    for (const app of nimiqMiniApps)
+      miniAppsMarkdown += formatMiniAppLine(app)
+  }
+
+  miniAppsMarkdown += '\n### EVM\n\n'
+  for (const app of evmMiniApps)
+    miniAppsMarkdown += formatMiniAppLine(app)
+
+  const miniAppsMarkdownPath = resolve(srcDir, 'mini-apps.md')
+  writeFileSync(miniAppsMarkdownPath, miniAppsMarkdown)
+  consola.success(`Mini apps markdown file generated at ${miniAppsMarkdownPath}`)
+
+  const toDistMiniApp = (app: MiniApp) => ({
+    ...app,
+    slug: generateSlug(app.name),
+    logo: app.logo ? `${baseGithubRawUrl}/${app.logo.replace(/^\.\//, '')}` : '',
+  })
+
+  const distMiniApps = {
+    nimiq: nimiqMiniApps.map(toDistMiniApp),
+    evm: evmMiniApps.map(toDistMiniApp),
+  }
+  const distMiniAppsJsonPath = resolve(distFolder, 'nimiq-mini-apps.json')
+  writeFileSync(distMiniAppsJsonPath, JSON.stringify(distMiniApps, null, 2))
+  consola.success(`Distribution JSON for mini apps generated at ${distMiniAppsJsonPath}`)
 
   // Optimize SVG assets
   await optimizeAssets()

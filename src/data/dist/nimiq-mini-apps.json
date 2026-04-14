@@ -1,0 +1,71 @@
+{
+  "nimiq": [],
+  "evm": [
+    {
+      "name": "1inch",
+      "url": "https://1inch.com/",
+      "type": "evm",
+      "description": "DEX aggregator that finds the best swap rates across multiple decentralized exchanges",
+      "logo": "",
+      "source": null,
+      "developer": null,
+      "featured": false,
+      "slug": "1inch"
+    },
+    {
+      "name": "Uniswap",
+      "url": "https://app.uniswap.org",
+      "type": "evm",
+      "description": "Leading decentralized exchange for swapping ERC-20 tokens",
+      "logo": "",
+      "source": "https://github.com/Uniswap/v4-core",
+      "developer": null,
+      "featured": false,
+      "slug": "uniswap"
+    },
+    {
+      "name": "Polymarket",
+      "url": "https://polymarket.com",
+      "type": "evm",
+      "description": "Prediction market platform for trading on real-world event outcomes",
+      "logo": "",
+      "source": null,
+      "developer": null,
+      "featured": false,
+      "slug": "polymarket"
+    },
+    {
+      "name": "OpenSea",
+      "url": "https://opensea.io",
+      "type": "evm",
+      "description": "The largest NFT marketplace for buying, selling, and discovering digital assets",
+      "logo": "",
+      "source": null,
+      "developer": null,
+      "featured": false,
+      "slug": "opensea"
+    },
+    {
+      "name": "Aave",
+      "url": "https://app.aave.com",
+      "type": "evm",
+      "description": "Decentralized lending and borrowing protocol for earning interest on deposits",
+      "logo": "",
+      "source": "https://github.com/aave/aave-v4",
+      "developer": null,
+      "featured": false,
+      "slug": "aave"
+    },
+    {
+      "name": "DappRadar",
+      "url": "https://dappradar.com",
+      "type": "evm",
+      "description": "Platform for discovering and tracking decentralized applications across multiple blockchains",
+      "logo": "",
+      "source": null,
+      "developer": null,
+      "featured": false,
+      "slug": "dappradar"
+    }
+  ]
+}

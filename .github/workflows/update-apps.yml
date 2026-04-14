@@ -9,6 +9,7 @@ on:
       - '!src/data/dist/nimiq-apps.json'
       - '!src/data/dist/nimiq-apps.archive.json'
       - '!src/data/dist/rpc-servers.json'
+      - '!src/data/dist/nimiq-mini-apps.json'
   # Allow manual trigger
   workflow_dispatch:
 

@@ -1,1 +1,5 @@
-If you want to update the information of the list, please do so by edditing either [./src/data/nimiq-apps.json](./src/data/nimiq-apps.json) or [./src/data/nimiq-apps.yml](./src/data/nimiq-apps.yml) and then create a PR, the CI will take care of the rest.
+If you want to update the information of the list, please do so by editing the relevant JSON file in [./src/data/](./src/data/) and then create a PR. The CI will take care of the rest.
+
+- **Apps**: [./src/data/nimiq-apps.json](./src/data/nimiq-apps.json)
+- **Mini Apps**: [./src/data/nimiq-mini-apps.json](./src/data/nimiq-mini-apps.json) — See the [Mini App PR template](./.github/PULL_REQUEST_TEMPLATE/mini-app.md) for submission guidelines.
+- **Resources**: [./src/data/nimiq-resources.json](./src/data/nimiq-resources.json)
