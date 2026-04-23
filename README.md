@@ -260,3 +260,6 @@ Where you can buy, sell, or trade Nimiq:
 ## API Access
 
 This repository can be used as a data source API. See the **[API Documentation](./API.md)** for endpoints, usage guidelines, and integration examples.
+
+> [!WARNING]
+> To report a malicious app, scam, phishing site, offensive content, or other policy-violating listing in this repository, [open an abuse report](https://github.com/nimiq/awesome/issues/new?template=report-abuse.yml).

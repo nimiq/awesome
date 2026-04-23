@@ -1,0 +1,88 @@
+name: Report malicious app or offensive content
+description: Report malicious, deceptive, abusive, or offensive content listed in this repository.
+title: "[Abuse report]: "
+labels:
+  - abuse-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report malicious apps, scams, phishing, malware, wallet drainers, impersonation, offensive content, or other policy-violating listings in this repository.
+
+        Do not include sensitive personal data in a public issue. For urgent, legal, or sensitive reports, use the private contact link in the issue chooser instead.
+  - type: dropdown
+    id: listing_type
+    attributes:
+      label: Affected listing type
+      description: Select the kind of entry or content you are reporting.
+      options:
+        - App
+        - Mini app
+        - Resource
+        - Exchange
+        - Explorer
+        - RPC server
+        - Other repository content
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Repo location or listed URL
+      description: Provide the repo path, README section, JSON entry, or external URL for the content being reported.
+      placeholder: https://github.com/nimiq/awesome/blob/main/src/data/nimiq-apps.json
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Report category
+      description: Select the primary reason for this report.
+      options:
+        - Malicious app or wallet drainer
+        - Scam or phishing
+        - Malware or unsafe downloads
+        - Impersonation or deceptive branding
+        - Offensive or hateful content
+        - Other policy violation
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What is the issue?
+      description: Briefly explain why this content should be reviewed or removed.
+      placeholder: This listing links to a phishing wallet clone that requests seed phrases from users.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting links or evidence
+      description: Add relevant URLs, screenshots, archived pages, threat reports, or other evidence. If the evidence is sensitive, use the private contact link instead.
+      placeholder: https://example.com/report
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Impact or severity
+      description: Estimate the potential harm if the content stays listed.
+      options:
+        - Critical - active theft, malware, or severe abuse
+        - High - credible risk to users or clearly harmful content
+        - Medium - suspicious or misleading content that needs review
+        - Low - policy concern with limited immediate risk
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Reporter contact (optional)
+      description: Share an email or handle if maintainers may need to follow up privately.
+      placeholder: name@example.com
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I am reporting this in good faith and have not included sensitive personal data in this public issue.
+          required: true
