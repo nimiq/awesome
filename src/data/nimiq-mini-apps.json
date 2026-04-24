@@ -40,6 +40,16 @@
     "featured": true
   },
   {
+    "name": "Nimtris",
+    "url": "https://nimtris.com",
+    "type": "nimiq",
+    "description": "Block puzzle game that rewards your high scores with NIM while playing",
+    "logo": "./assets/eligioo-nimtris.svg",
+    "source": "https://github.com/eligioo/nimtris",
+    "developer": "@Eligioo",
+    "featured": true
+  },
+  {
     "name": "OpenSea",
     "url": "https://opensea.io",
     "type": "evm",
