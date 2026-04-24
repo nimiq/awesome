@@ -2,7 +2,7 @@
 
 ### Nimiq
 
-- [Nimtris](https://nimtris.com) ([Source](https://github.com/eligioo/nimtris)) ([@Eligioo](https://github.com/Eligioo)): Tetris-like game earning you some NIM while playing
+> Your mini app could be here! [Submit a PR](https://github.com/nimiq/awesome/compare?template=mini-app.md) to add your Nimiq mini app.
 
 ### EVM
 
