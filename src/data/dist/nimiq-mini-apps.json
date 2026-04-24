@@ -5,7 +5,7 @@
       "url": "https://nimtris.com",
       "type": "nimiq",
       "description": "Block puzzle game that rewards your high scores with NIM while playing",
-      "logo": "",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/eligioo-nimtris.svg",
       "source": "https://github.com/eligioo/nimtris",
       "developer": "@Eligioo",
       "featured": true,
