@@ -34,7 +34,7 @@
     "url": "https://evm-mini-wallet.vercel.app",
     "type": "evm",
     "description": "Lightweight, mobile-first wallet for sending and receiving tokens across EVM chains",
-    "logo": "./assets/albermonte-evm-mini-wallet.svg",
+    "logo": "./assets/mini-apps/albermonte-evm-mini-wallet.svg",
     "source": "https://github.com/Albermonte/evm-mini-wallet",
     "developer": "@Albermonte",
     "featured": true
@@ -44,7 +44,7 @@
     "url": "https://nimtris.com",
     "type": "nimiq",
     "description": "Block puzzle game that rewards your high scores with NIM while playing",
-    "logo": "./assets/eligioo-nimtris.svg",
+    "logo": "./assets/mini-apps/eligioo-nimtris.svg",
     "source": "https://github.com/eligioo/nimtris",
     "developer": "@Eligioo",
     "featured": true
