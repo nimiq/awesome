@@ -2,7 +2,7 @@
 
 ### Nimiq
 
-> Your mini app could be here! [Submit a PR](https://github.com/nimiq/awesome/compare?template=mini-app.md) to add your Nimiq mini app.
+- ⭐ [Nimtris](https://nimtris.com) ([Source](https://github.com/eligioo/nimtris)) ([@Eligioo](https://github.com/Eligioo)): Block puzzle game that rewards your high scores with NIM while playing
 
 ### EVM
 
