@@ -10,6 +10,17 @@
       "developer": "@Eligioo",
       "featured": true,
       "slug": "nimtris"
+    },
+    {
+      "name": "Hex Hopper",
+      "url": "https://dinohop.app",
+      "type": "nimiq",
+      "description": "Fast Nimiq Pay arcade mini-game where players dodge obstacles, collect hexagons, and claim rewards",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/onmax-hex-hopper.svg",
+      "source": null,
+      "developer": "@onmax",
+      "featured": false,
+      "slug": "hex-hopper"
     }
   ],
   "evm": [

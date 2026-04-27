@@ -181,6 +181,7 @@
 ### Nimiq
 
 - ⭐ [Nimtris](https://nimtris.com) ([Source](https://github.com/eligioo/nimtris)) ([@Eligioo](https://github.com/Eligioo)): Block puzzle game that rewards your high scores with NIM while playing
+- [Hex Hopper](https://dinohop.app) ([@onmax](https://github.com/onmax)): Fast Nimiq Pay arcade mini-game where players dodge obstacles, collect hexagons, and claim rewards
 
 ### EVM
 
