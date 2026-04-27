@@ -2,6 +2,8 @@ name: Update Source
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'src/**'
       # Ignore changes from the action itself
