@@ -90,6 +90,15 @@
     "developer": "@nimiq"
   },
   {
+    "name": "NimFeed",
+    "description": "On-chain social microblog: profiles and posts on Nimiq, synced in your browser from chain data with no backend. Source: https://github.com/maestroi/NimFeed",
+    "link": "https://maestroi.github.io/NimFeed/",
+    "type": "Infrastructure",
+    "logo": "./assets/nimfeed.svg",
+    "screenshot": "",
+    "developer": "@maestroi"
+  },
+  {
     "name": "Nimiq Sunset Cyberspace",
     "description": "Score points, beat your own records and earn as many NIM as you can!",
     "link": "https://play.google.com/store/apps/details?id=com.nimiqsunsetcyberspace",
@@ -126,6 +135,24 @@
     "developer": "@paulghz"
   },
   {
+    "name": "PlayNimiq",
+    "description": "Multi-game platform on Nimiq where you can play several titles and earn real rewards.",
+    "link": "https://playnimiq.com/",
+    "type": "Games",
+    "logo": "./assets/playnimiq.svg",
+    "screenshot": "",
+    "developer": "@maestroi"
+  },
+  {
+    "name": "Nimiq DOOM",
+    "description": "Experimental proof-of-concept showcasing creative blockchain use cases through a retro DOOM game demo. Explores on-chain and hybrid data storage possibilities.",
+    "link": "https://maestroi.github.io/nimiq-doom/",
+    "type": "Games",
+    "logo": "./assets/nimiq-hexagon.svg",
+    "screenshot": "",
+    "developer": "@maestroi"
+  },
+  {
     "name": "Twini",
     "description": "Frictionless donations with NIM for Twitch.tv",
     "link": "https://github.com/Eligioo/twinibot-telegram",
@@ -144,6 +171,15 @@
     "developer": "@nimiq"
   },
   {
+    "name": "Nimiq Notifier Bot",
+    "description": "Telegram bot for whale alerts, epoch-start and staking reward notifications, and monitoring transactions on your Nimiq addresses.",
+    "link": "https://t.me/nimiq_notifier_bot",
+    "type": "Bots",
+    "logo": "./assets/nimiq-notifier-bot.svg",
+    "screenshot": "",
+    "developer": "@maestroi"
+  },
+  {
     "name": "Nimiq Tip Bot",
     "description": "A Tip Bot to Tip Humans, using the Nimiq tech",
     "link": "https://t.me/NimiqTipBot",
@@ -151,24 +187,6 @@
     "logo": "./assets/nimiq-tip-bot.svg",
     "screenshot": "",
     "developer": "@albermonte"
-  },
-  {
-    "name": "Nimiq 2048",
-    "description": "A Nimiq-themed version of the popular 2048 game.",
-    "link": "https://nimiq2048.com/",
-    "type": "Games",
-    "logo": "./assets/nimiq-2048.svg",
-    "screenshot": "",
-    "developer": "@maestroi"
-  },
-  {
-    "name": "Nimiq DOOM",
-    "description": "Experimental proof-of-concept showcasing creative blockchain use cases through a retro DOOM game demo. Explores on-chain and hybrid data storage possibilities.",
-    "link": "https://maestroi.github.io/nimiq-doom/",
-    "type": "Games",
-    "logo": "./assets/nimiq-hexagon.svg",
-    "screenshot": "",
-    "developer": "@maestroi"
   },
   {
     "name": "Nimiq FM",

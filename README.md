@@ -140,6 +140,7 @@
 ### Infrastructure
 
 - [NIM Donations](https://www.nimiq.com/accept-donations) ([@nimiq](https://github.com/nimiq)): Easily receive donations by creating a personalized button or QR code.
+- [NimFeed](https://maestroi.github.io/NimFeed/) ([@maestroi](https://github.com/maestroi)): On-chain social microblog: profiles and posts on Nimiq, synced in your browser from chain data with no backend. Source: https://github.com/maestroi/NimFeed
 
 ### E-commerce
 
@@ -153,7 +154,7 @@
 - [Nimiq Sunset Cyberspace](https://play.google.com/store/apps/details?id=com.nimiqsunsetcyberspace) ([@albermonte](https://github.com/albermonte)): Score points, beat your own records and earn as many NIM as you can!
 - [NimWorld](https://world.nimpowered.com) ([@paulghz](https://github.com/paulghz)): A pixel war / million dollar page on a world map powered by Nimiq blockchain
 - [Pixels](https://pixels.nimpowered.com) ([@paulghz](https://github.com/paulghz)): A 2048 x 1024 drawing canvas where you can draw pixels with NIM. Draw up to 8 pixels per transaction starting from 0.1 NIM.
-- [Nimiq 2048](https://nimiq2048.com/) ([@maestroi](https://github.com/maestroi)): A Nimiq-themed version of the popular 2048 game.
+- [PlayNimiq](https://playnimiq.com/) ([@maestroi](https://github.com/maestroi)): Multi-game platform on Nimiq where you can play several titles and earn real rewards.
 - [Nimiq DOOM](https://maestroi.github.io/nimiq-doom/) ([@maestroi](https://github.com/maestroi)): Experimental proof-of-concept showcasing creative blockchain use cases through a retro DOOM game demo. Explores on-chain and hybrid data storage possibilities.
 
 ### Insights
@@ -170,6 +171,7 @@
 ### Bots
 
 - [Twini](https://github.com/Eligioo/twinibot-telegram) ([@Eligioo](https://github.com/Eligioo)): Frictionless donations with NIM for Twitch.tv
+- [Nimiq Notifier Bot](https://t.me/nimiq_notifier_bot) ([@maestroi](https://github.com/maestroi)): Telegram bot for whale alerts, epoch-start and staking reward notifications, and monitoring transactions on your Nimiq addresses.
 - [Nimiq Tip Bot](https://t.me/NimiqTipBot) ([@albermonte](https://github.com/albermonte)): A Tip Bot to Tip Humans, using the Nimiq tech
 
 <!-- /automd -->
