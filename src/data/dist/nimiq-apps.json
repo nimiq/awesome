@@ -208,5 +208,15 @@
     "screenshot": "",
     "developer": "@Albermonte",
     "slug": "nim-stalker"
+  },
+  {
+    "name": "Nimiq Space",
+    "description": "Browser multiplayer hangout for the Nimiq community: isometric rooms, chat, building blocks, portals between rooms, and a shared canvas leaderboard. Sign in with your Nimiq wallet.",
+    "link": "https://nimiq.space",
+    "type": "Games",
+    "logo": "",
+    "screenshot": "",
+    "developer": "@Harlski",
+    "slug": "nimiq-space"
   }
 ]

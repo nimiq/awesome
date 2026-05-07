@@ -25,6 +25,7 @@
 - [Pixels](https://pixels.nimpowered.com) ([@paulghz](https://github.com/paulghz)): A 2048 x 1024 drawing canvas where you can draw pixels with NIM. Draw up to 8 pixels per transaction starting from 0.1 NIM.
 - [Nimiq 2048](https://nimiq2048.com/) ([@maestroi](https://github.com/maestroi)): A Nimiq-themed version of the popular 2048 game.
 - [Nimiq DOOM](https://maestroi.github.io/nimiq-doom/) ([@maestroi](https://github.com/maestroi)): Experimental proof-of-concept showcasing creative blockchain use cases through a retro DOOM game demo. Explores on-chain and hybrid data storage possibilities.
+- [Nimiq Space](https://nimiq.space) ([@Harlski](https://github.com/Harlski)): Browser multiplayer hangout for the Nimiq community: isometric rooms, chat, building blocks, portals between rooms, and a shared canvas leaderboard. Sign in with your Nimiq wallet.
 
 ### Insights
 
