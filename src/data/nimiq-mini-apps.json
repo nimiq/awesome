@@ -50,6 +50,16 @@
     "featured": false
   },
   {
+    "name": "Nimiq Space",
+    "url": "https://nimiq.space",
+    "type": "nimiq",
+    "description": "Social-first multiplayer sandbox, build, create, earn.",
+    "logo": "./assets/mini-apps/harlski-nimiq-space.svg",
+    "source": "https://github.com/harlski/nspace",
+    "developer": "@harlski",
+    "featured": false
+  },
+  {
     "name": "Nimtris",
     "url": "https://nimtris.com",
     "type": "nimiq",
