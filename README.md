@@ -68,6 +68,7 @@
 - [Nimiq Tools](https://nimiq-tools.github.io) ([Source](https://github.com/nimiq-tools/nimiq-tools.github.io)) ([@eligioo](https://github.com/eligioo)): Set of Nimiq tools for both online and offline usage including address management, balance checking, transaction generation, and message signing
 - [Nimiq Starter](https://github.com/onmax/nimiq-starter) ([Source](https://github.com/onmax/nimiq-starter)) ([@onmax](https://github.com/onmax)): Starter template for building applications with Nimiq blockchain integration
 - [Nimiq Changelog](https://nimiq-changelog.je-cf9.workers.dev/) ([Source](https://github.com/onmax/nimiq-changelog)) ([@onmax](https://github.com/onmax)): Track latest releases and changes across Nimiq ecosystem projects
+- [Nimiq Branding CLI (nq)](https://github.com/Andjroo111/nimiq-branding-cli) ([Source](https://github.com/Andjroo111/nimiq-branding-cli)) ([@Andjroo111](https://github.com/Andjroo111)): Pixel-verified UI component registry + CLI: scaffold 39 wallet/hub components (Vue 3 or plain HTML) and pull official Nimiq assets, icons and hexagon flags
 
 ### Documentation
 

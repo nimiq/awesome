@@ -262,5 +262,13 @@
     "source": "https://github.com/Albermonte/core-rs-albatross-slim",
     "description": "Stripped-down read-only history node exposing 11 RPC methods for querying accounts, transactions, and blocks",
     "author": "@Albermonte"
+  },
+  {
+    "type": "developer-tool",
+    "name": "Nimiq Branding CLI (nq)",
+    "link": "https://github.com/Andjroo111/nimiq-branding-cli",
+    "source": "https://github.com/Andjroo111/nimiq-branding-cli",
+    "description": "Pixel-verified UI component registry + CLI: scaffold 39 wallet/hub components (Vue 3 or plain HTML) and pull official Nimiq assets, icons and hexagon flags",
+    "author": "@Andjroo111"
   }
 ]
