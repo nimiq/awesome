@@ -211,12 +211,12 @@
   },
   {
     "name": "Nimiq Space",
-    "description": "Browser multiplayer hangout for the Nimiq community: isometric rooms, chat, building blocks, portals between rooms, and a shared canvas leaderboard. Sign in with your Nimiq wallet.",
+    "description": "Social-first multiplayer sandbox, build, create, earn.",
     "link": "https://nimiq.space",
     "type": "Games",
-    "logo": "",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/harlski-nimiq-space.svg",
     "screenshot": "",
-    "developer": "@Harlski",
+    "developer": "@harlski",
     "slug": "nimiq-space"
   }
 ]

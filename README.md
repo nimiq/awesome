@@ -155,7 +155,7 @@
 - [Pixels](https://pixels.nimpowered.com) ([@paulghz](https://github.com/paulghz)): A 2048 x 1024 drawing canvas where you can draw pixels with NIM. Draw up to 8 pixels per transaction starting from 0.1 NIM.
 - [Nimiq 2048](https://nimiq2048.com/) ([@maestroi](https://github.com/maestroi)): A Nimiq-themed version of the popular 2048 game.
 - [Nimiq DOOM](https://maestroi.github.io/nimiq-doom/) ([@maestroi](https://github.com/maestroi)): Experimental proof-of-concept showcasing creative blockchain use cases through a retro DOOM game demo. Explores on-chain and hybrid data storage possibilities.
-- [Nimiq Space](https://nimiq.space) ([@Harlski](https://github.com/Harlski)): Browser multiplayer hangout for the Nimiq community: isometric rooms, chat, building blocks, portals between rooms, and a shared canvas leaderboard. Sign in with your Nimiq wallet.
+- [Nimiq Space](https://nimiq.space) ([@harlski](https://github.com/harlski)): Social-first multiplayer sandbox, build, create, earn.
 
 ### Insights
 
@@ -183,6 +183,7 @@
 
 - ⭐ [Nimtris](https://nimtris.com) ([Source](https://github.com/eligioo/nimtris)) ([@Eligioo](https://github.com/Eligioo)): Block puzzle game that rewards your high scores with NIM while playing
 - [Hex Hopper](https://dinohop.app) ([@onmax](https://github.com/onmax)): Fast Nimiq Pay arcade mini-game where players dodge obstacles, collect hexagons, and claim rewards
+- [Nimiq Space](https://nimiq.space) ([Source](https://github.com/harlski/nspace)) ([@harlski](https://github.com/harlski)): Social-first multiplayer sandbox, build, create, earn.
 
 ### EVM
 
