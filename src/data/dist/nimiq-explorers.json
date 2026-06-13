@@ -10,7 +10,7 @@
     {
       "name": "RE:NIM Explorer",
       "link": "https://nim.re/explorer",
-      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/re-nim.png",
+      "logo": "https://raw.githubusercontent.com/maestroi/awesome/main/src/data/assets/re-nim.png",
       "developer": "@nim-re",
       "network": "mainnet"
     },
@@ -24,14 +24,14 @@
     {
       "name": "NimiqScan",
       "link": "https://nimiqscan.com",
-      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/nimiqscan.png",
+      "logo": "https://raw.githubusercontent.com/maestroi/awesome/main/src/data/assets/nimiqscan.png",
       "developer": "@mrmaestroi",
       "network": "mainnet"
     },
     {
       "name": "Nimiq.cafe",
       "link": "https://nimiq.cafe/explorer",
-      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/nimiq-cafe.png",
+      "logo": "https://raw.githubusercontent.com/maestroi/awesome/main/src/data/assets/nimiq-cafe.png",
       "developer": "@miao-yu",
       "network": "mainnet"
     }
