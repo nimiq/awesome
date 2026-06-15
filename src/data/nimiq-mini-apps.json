@@ -60,6 +60,16 @@
     "featured": false
   },
   {
+    "name": "Nimiq Test Mini App",
+    "url": "https://nimiq.com",
+    "type": "nimiq",
+    "description": "Testing Mini App submissions",
+    "logo": "./assets/mini-apps/albermonte-nimiq-test-mini-app.svg",
+    "source": null,
+    "developer": "@albermonte",
+    "featured": false
+  },
+  {
     "name": "Nimtris",
     "url": "https://nimtris.com",
     "type": "nimiq",
