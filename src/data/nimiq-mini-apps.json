@@ -60,6 +60,16 @@
     "featured": false
   },
   {
+    "name": "NimJump",
+    "url": "https://nimjump.zetashare.com",
+    "type": "nimiq",
+    "description": "NimJump — climb as high as you can while dodging enemies that get tougher the higher you go, and it actually pays out real NIM: win daily and weekly leaderboard rewards",
+    "logo": "./assets/mini-apps/the_dude-nimjump.svg",
+    "source": "https://github.com/nimjump/game",
+    "developer": "@The_Dude",
+    "featured": false
+  },
+  {
     "name": "Nimtris",
     "url": "https://nimtris.com",
     "type": "nimiq",
