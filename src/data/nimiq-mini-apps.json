@@ -80,6 +80,16 @@
     "featured": false
   },
   {
+  "name": "SafePay ZK",
+  "url": "https://safepayzk.com",
+  "type": "nimiq",
+  "description": "Verify payment requests before sending NIM.",
+  "logo": "./assets/mini-apps/quetzaltv-safepay-zk.svg",
+  "source": "https://github.com/Kmiru/nimiq-safepay-zk",
+  "developer": "@Kmiru",
+  "featured": false
+},
+  {
     "name": "Uniswap",
     "url": "https://app.uniswap.org",
     "type": "evm",
