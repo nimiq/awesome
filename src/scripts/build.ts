@@ -1,11 +1,11 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import * as fs from 'node:fs/promises'
-import * as https from 'node:https'
+import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
 import process from 'node:process'
 import { consola } from 'consola'
 import { $ } from 'execa'
 import { dirname, resolve } from 'pathe'
 import { array, boolean, literal, nullable, object, safeParse, string, union } from 'valibot'
+import { parse } from 'yaml'
 import { optimizeAssets } from './optimize-assets.js'
 
 const __dirname = dirname('.')
@@ -18,6 +18,10 @@ const nimiqExplorersJson = resolve(dataDir, 'nimiq-explorers.json')
 const nimiqRpcServersJson = resolve(dataDir, 'nimiq-rpc-servers.json')
 const nimiqMiniAppsJson = resolve(dataDir, 'nimiq-mini-apps.json')
 const exchangeLogosDir = resolve(dataDir, 'assets/exchanges')
+const upstreamExchangesOwner = 'nimiq'
+const upstreamExchangesRepo = 'nimiq-website'
+const upstreamExchangesBranch = 'nuxt-content'
+const upstreamExchangesPath = 'content/collections/exchanges/'
 
 try {
   if (!existsSync(exchangeLogosDir)) {
@@ -42,111 +46,88 @@ async function getGitInfo() {
   }
 }
 
-function downloadImage(url: string, filepath: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    if (!url) {
-      reject(new Error('No URL provided'))
-      return
-    }
-
-    import('node:fs').then((fs_standard) => {
-      https.get(url, { rejectUnauthorized: false }, (response) => {
-        if (response.statusCode === 200) {
-          const writeStream = fs_standard.createWriteStream(filepath)
-          response.pipe(writeStream)
-
-          writeStream.on('finish', () => {
-            writeStream.close()
-            consola.success(`Downloaded image to ${filepath}`)
-            resolve()
-          })
-
-          writeStream.on('error', (err) => {
-            fs.unlink(filepath).catch(console.error)
-            reject(err)
-          })
-        }
-        else if (response.statusCode === 301 || response.statusCode === 302) {
-          if (response.headers.location) {
-            downloadImage(response.headers.location, filepath)
-              .then(resolve)
-              .catch(reject)
-          }
-          else {
-            reject(new Error(`Redirect with no location header: ${response.statusCode}`))
-          }
-        }
-        else {
-          reject(new Error(`Failed to download image, status code: ${response.statusCode}`))
-        }
-      }).on('error', (err) => {
-        reject(err)
-      })
-    }).catch((err) => {
-      reject(err)
-    })
-  })
+interface UpstreamExchangeRecord {
+  name?: unknown
+  slug?: unknown
+  logo?: unknown
+  link?: unknown
 }
 
-async function fetchExchangesFromApi() {
+function isRemoteAssetPath(filePath: string): boolean {
+  return /^https?:\/\//.test(filePath)
+}
+
+function ensureStringField(record: UpstreamExchangeRecord, field: keyof UpstreamExchangeRecord, filePath: string): string {
+  const value = record[field]
+  if (typeof value !== 'string' || value.trim() === '') {
+    throw new Error(`Exchange file ${filePath} is missing a valid "${field}" field`)
+  }
+  return value
+}
+
+function resolveUpstreamLogoPath(logoPath: string): string {
+  if (!logoPath.startsWith('/')) {
+    throw new Error(`Unsupported upstream logo path: ${logoPath}`)
+  }
+
+  return logoPath.replace(/^\/images\/exchanges\//, 'assets/exchanges/')
+}
+
+async function fetchExchangesFromGitHub() {
+  consola.info('Fetching exchange data from nimiq-website YAML collection...')
+  const tempRoot = mkdtempSync(resolve(tmpdir(), 'nimiq-exchanges-'))
+  const checkoutDir = resolve(tempRoot, 'repo')
+
   try {
-    consola.info('Fetching exchange data from API...')
-    const response = await fetch('https://api.nimiq.dev/api/exchanges')
-    if (!response.ok) {
-      throw new Error(`API responded with status: ${response.status}`)
+    await $({ cwd: tempRoot })`git clone --depth 1 --filter=blob:none --sparse --branch ${upstreamExchangesBranch} https://github.com/${upstreamExchangesOwner}/${upstreamExchangesRepo}.git ${checkoutDir}`
+    await $({ cwd: checkoutDir })`git sparse-checkout set ${upstreamExchangesPath} public/images/exchanges`
+
+    const exchangeDir = resolve(checkoutDir, upstreamExchangesPath)
+    const exchangeFiles = readdirSync(exchangeDir)
+      .filter(fileName => /\.ya?ml$/i.test(fileName))
+      .sort((left, right) => left.localeCompare(right))
+
+    if (exchangeFiles.length === 0) {
+      throw new Error(`No exchange YAML files found under ${upstreamExchangesPath}`)
     }
-    const data = await response.json() as any
 
-    const exchanges = await Promise.all(data.map(async (exchange: any) => {
-      const name = exchange.name
-      const logoUrl = exchange.logo?.url
+    const exchanges = exchangeFiles.map((fileName) => {
+      const filePath = `${upstreamExchangesPath}${fileName}`
+      const rawYaml = readFileSync(resolve(exchangeDir, fileName), 'utf-8')
+      const parsedRecord = parse(rawYaml) as UpstreamExchangeRecord | null
 
-      let fileExtension = 'svg'
-      if (logoUrl) {
-        const urlParts = logoUrl.split('.')
-        const detectedExtension = urlParts[urlParts.length - 1].toLowerCase()
-
-        const validExtensions = ['svg', 'png', 'jpg', 'jpeg', 'webp', 'avif']
-        if (validExtensions.includes(detectedExtension.split('?')[0])) {
-          fileExtension = detectedExtension.split('?')[0]
-        }
+      if (!parsedRecord || typeof parsedRecord !== 'object') {
+        throw new Error(`Exchange file ${filePath} did not parse into an object`)
       }
 
-      const fileName = `${name.toLowerCase().replace(/\s+/g, '-')}.${fileExtension}`
-      const localLogoPath = `assets/exchanges/${fileName}`
-      const fullLocalPath = resolve(dataDir, localLogoPath)
+      const name = ensureStringField(parsedRecord, 'name', filePath)
+      const upstreamLogo = ensureStringField(parsedRecord, 'logo', filePath)
+      const logo = resolveUpstreamLogoPath(upstreamLogo)
+      const url = ensureStringField(parsedRecord, 'link', filePath)
+      const sourceLogoPath = resolve(checkoutDir, `public${upstreamLogo}`)
+      const targetLogoPath = resolve(dataDir, logo)
 
-      if (logoUrl) {
-        consola.info(`Downloading logo for ${name} from ${logoUrl}`)
-        try {
-          await downloadImage(logoUrl, fullLocalPath)
-          consola.success(`Logo for ${name} downloaded to ${fullLocalPath}`)
-        }
-        catch (error) {
-          consola.error(`Failed to download logo for ${name}: ${error}`)
-          if (!existsSync(fullLocalPath)) {
-            consola.warn(`No existing logo found for ${name}, using empty string`)
-          }
-        }
+      if (!existsSync(sourceLogoPath)) {
+        throw new Error(`Exchange logo file ${upstreamLogo} referenced by ${filePath} was not found in upstream repo`)
       }
+
+      copyFileSync(sourceLogoPath, targetLogoPath)
 
       return {
         name,
-        logo: existsSync(fullLocalPath) ? localLogoPath : '',
-        url: exchange.link,
-        description: exchange.description || '',
-        richDescription: exchange.richDescription || null,
-      }
-    }))
+        logo,
+        url,
+        description: '',
+        richDescription: null,
+      } satisfies Exchange
+    })
 
-    writeFileSync(nimiqExchangesJson, JSON.stringify(exchanges, null, 2))
+    const sortedExchanges = exchanges.sort((left, right) => left.name.localeCompare(right.name))
+    writeFileSync(nimiqExchangesJson, `${JSON.stringify(sortedExchanges, null, 2)}\n`)
     consola.success(`Successfully fetched and saved exchange data to ${nimiqExchangesJson}`)
-    return exchanges
   }
-  catch (error) {
-    consola.error('Failed to fetch exchange data from API:', error)
-    consola.warn('Using existing exchange data from JSON file...')
-    return null
+  finally {
+    rmSync(tempRoot, { recursive: true, force: true })
   }
 }
 
@@ -423,7 +404,7 @@ const resourceTypeOrder = [
 ]
 
 async function main() {
-  await fetchExchangesFromApi()
+  await fetchExchangesFromGitHub()
 
   const exchangesJson = readFileSync(nimiqExchangesJson, 'utf-8')
   const parsedExchangesJson = JSON.parse(exchangesJson) as Exchange[]
@@ -660,10 +641,12 @@ async function main() {
   // Process exchanges for distribution JSON
   const distExchanges = parsedExchangesJson.map(exchange => ({
     ...exchange,
-    logo: exchange.logo ? `${baseGithubRawUrl}/${exchange.logo.replace(/^\.\//, '')}` : '',
+    logo: exchange.logo
+      ? (isRemoteAssetPath(exchange.logo) ? exchange.logo : `${baseGithubRawUrl}/${exchange.logo.replace(/^\.\//, '')}`)
+      : '',
   }))
   const distExchangesJsonPath = resolve(distFolder, 'nimiq-exchanges.json')
-  writeFileSync(distExchangesJsonPath, JSON.stringify(distExchanges, null, 2))
+  writeFileSync(distExchangesJsonPath, `${JSON.stringify(distExchanges, null, 2)}\n`)
   consola.success(`Distribution JSON for exchanges generated at ${distExchangesJsonPath}`)
 
   const distResourcesJsonPath = resolve(distFolder, 'nimiq-resources.json')
