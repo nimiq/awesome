@@ -72,7 +72,7 @@ jobs:
               return logo.replace(/^\.\//, '').replace(/^\/+/, '')
             }
 
-            function formatLogo(app) {
+            function formatLogo(app, source) {
               if (!app.logo)
                 return 'No logo'
 
@@ -81,7 +81,7 @@ jobs:
 
               if (!/^https?:\/\//.test(logo)) {
                 const normalizedLogo = normalizeLogoPath(logo)
-                src = `https://raw.githubusercontent.com/${pr.head.repo.owner.login}/${pr.head.repo.name}/${pr.head.sha}/src/data/${normalizedLogo}`
+                src = `https://raw.githubusercontent.com/${source.owner}/${source.repo}/${source.ref}/src/data/${normalizedLogo}`
               }
 
               return `<img src="${escapeHtml(src)}" width="48" alt="Logo for ${escapeHtml(app.name)}">`
@@ -113,11 +113,23 @@ jobs:
                 formatLink(app.url),
                 escapeTable(app.type),
                 escapeTable(app.description),
-                formatLogo(app),
+                formatLogo(app, change.source),
                 app.source ? formatLink(app.source) : '',
                 app.developer ? escapeTable(app.developer) : '',
                 app.featured ? 'true' : 'false',
               ].join(' | ')
+            }
+
+            const baseSource = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: pr.base.sha,
+            }
+
+            const headSource = {
+              owner: pr.head.repo.owner.login,
+              repo: pr.head.repo.name,
+              ref: pr.head.sha,
             }
 
             const baseApps = await readJsonFromRepo({
@@ -133,19 +145,29 @@ jobs:
             })
 
             const baseAppsByName = new Map(baseApps.map(app => [app.name, app]))
-            const changes = headApps
+            const headAppsByName = new Map(headApps.map(app => [app.name, app]))
+            const addedOrEditedChanges = headApps
               .map((app) => {
                 const baseApp = baseAppsByName.get(app.name)
 
                 if (!baseApp)
-                  return { status: 'Added', app }
+                  return { status: 'Added', app, source: headSource }
 
                 if (hasAppChanged(baseApp, app))
-                  return { status: 'Edited', app }
+                  return { status: 'Edited', app, source: headSource }
 
                 return null
               })
               .filter(Boolean)
+
+            const removedChanges = baseApps
+              .filter(app => !headAppsByName.has(app.name))
+              .map(app => ({ status: 'Removed', app, source: baseSource }))
+
+            const changes = [
+              ...addedOrEditedChanges,
+              ...removedChanges,
+            ]
 
             const table = changes.length > 0
               ? [
@@ -153,7 +175,7 @@ jobs:
                   '| --- | --- | --- | --- | --- | --- | --- | --- | --- |',
                   ...changes.map(formatRow).map(row => `| ${row} |`),
                 ].join('\n')
-              : 'No added or edited mini app entries found.'
+              : 'No added, edited, or removed mini app entries found.'
 
             const body = [
               marker,
