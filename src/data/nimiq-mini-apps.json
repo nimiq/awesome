@@ -40,16 +40,6 @@
     "featured": true
   },
   {
-    "name": "Hex Hopper",
-    "url": "https://dinohop.app",
-    "type": "nimiq",
-    "description": "Fast Nimiq Pay arcade mini-game where players dodge obstacles, collect hexagons, and claim rewards",
-    "logo": "./assets/mini-apps/onmax-hex-hopper.svg",
-    "source": null,
-    "developer": "@onmax",
-    "featured": false
-  },
-  {
     "name": "Nimiq Space",
     "url": "https://nimiq.space",
     "type": "nimiq",

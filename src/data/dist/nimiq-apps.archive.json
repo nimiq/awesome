@@ -118,5 +118,15 @@
     "screenshot": "",
     "developer": "PayNim",
     "slug": "paynim-telegram-bot"
+  },
+  {
+    "name": "Hex Hopper",
+    "description": "Fast Nimiq Pay arcade mini-game where players dodge obstacles, collect hexagons, and claim rewards",
+    "link": "https://dinohop.app",
+    "type": "Games",
+    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/archive/assets/onmax-hex-hopper.svg",
+    "screenshot": "",
+    "developer": "@onmax",
+    "slug": "hex-hopper"
   }
 ]
