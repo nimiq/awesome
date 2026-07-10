@@ -1,3 +1,4 @@
+import type { MiniAppCategory } from './mini-app-categories.js'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import * as fs from 'node:fs/promises'
 import * as https from 'node:https'
@@ -6,6 +7,7 @@ import { consola } from 'consola'
 import { $ } from 'execa'
 import { dirname, resolve } from 'pathe'
 import { array, boolean, literal, nullable, object, safeParse, string, union } from 'valibot'
+import { MINI_APP_CATEGORIES, MINI_APP_CATEGORY_LABELS, MiniAppCategorySchema } from './mini-app-categories.js'
 import { optimizeAssets } from './optimize-assets.js'
 
 const __dirname = dirname('.')
@@ -238,6 +240,7 @@ interface MiniApp {
   name: string
   url: string
   type: MiniAppType
+  category: MiniAppCategory
   description: string
   logo: string
   source: string | null
@@ -251,6 +254,7 @@ const MiniAppSchema = object({
   name: string(),
   url: string(),
   type: MiniAppTypeSchema,
+  category: MiniAppCategorySchema,
   description: string(),
   logo: string(),
   source: nullable(string()),
@@ -785,6 +789,24 @@ async function main() {
     return `- ${featured}[${app.name}](${app.url})${sourceLink}${developerLink}: ${app.description}\n`
   }
 
+  function appendMiniAppsByCategory(apps: MiniApp[]): string {
+    let content = ''
+
+    for (const category of MINI_APP_CATEGORIES) {
+      const categoryApps = apps.filter(app => app.category === category)
+      if (categoryApps.length === 0)
+        continue
+
+      if (content)
+        content += '\n'
+      content += `#### ${MINI_APP_CATEGORY_LABELS[category]}\n\n`
+      for (const app of categoryApps)
+        content += formatMiniAppLine(app)
+    }
+
+    return content
+  }
+
   let miniAppsMarkdown = '## Mini Apps\n'
 
   miniAppsMarkdown += '\n### Nimiq\n\n'
@@ -792,13 +814,11 @@ async function main() {
     miniAppsMarkdown += '> Your mini app could be here! [Submit a PR](https://github.com/nimiq/awesome/compare?template=mini-app.md) to add your Nimiq mini app.\n'
   }
   else {
-    for (const app of nimiqMiniApps)
-      miniAppsMarkdown += formatMiniAppLine(app)
+    miniAppsMarkdown += appendMiniAppsByCategory(nimiqMiniApps)
   }
 
   miniAppsMarkdown += '\n### EVM\n\n'
-  for (const app of evmMiniApps)
-    miniAppsMarkdown += formatMiniAppLine(app)
+  miniAppsMarkdown += appendMiniAppsByCategory(evmMiniApps)
 
   const miniAppsMarkdownPath = resolve(srcDir, 'mini-apps.md')
   writeFileSync(miniAppsMarkdownPath, miniAppsMarkdown)
