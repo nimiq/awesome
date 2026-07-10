@@ -56,7 +56,7 @@ This is a curated collection of Nimiq ecosystem projects with an automated build
 **Apps:** Categorized by type (Wallets, Infrastructure, E-commerce, Games, Insights, Promotion, Bots, Miner, Faucet)
 **Resources:** Categorized by type (developer-tool, documentation, core, rpc, ui, utils, validator, node, infrastructure)
 **Exchanges:** Alphabetically sorted list with logos and descriptions
-**Mini Apps:** Categorized by type (`nimiq`, `evm`), kept alphabetically by name in JSON, with featured entries displayed first within each generated category
+**Mini Apps:** Grouped by type (`nimiq`, `evm`) with one required primary category (`defi`, `exchanges`, `games`, `marketplaces`, `nfts`, `social`, `utilities`, or `wallets`), kept alphabetically by name in JSON, with featured entries displayed first
 **Explorers:** Grouped by network (`mainnet`, `testnet`)
 **RPC Servers:** Grouped by network (`mainnet`, `testnet`) and displayed with a public-server warning
 
@@ -77,6 +77,6 @@ This is a curated collection of Nimiq ecosystem projects with an automated build
 - Asset paths in JSON should be relative (e.g., `"./assets/logo.svg"`)
 - Distribution files contain absolute GitHub URLs for external consumption
 - ESLint uses @antfu/eslint-config with TypeScript support
-- Mini app entries must be alphabetized by name, use HTTPS URLs, keep descriptions at 200 characters or fewer, and set `featured` to `false` for contributor submissions
+- Mini app entries must have exactly one allowed category, be alphabetized by name, use HTTPS URLs, keep descriptions at 200 characters or fewer, and set `featured` to `false` for contributor submissions
 - Mini app logos must be SVG files in `src/data/assets/mini-apps/` named `{developer}-{appName}.svg` using lowercase slug formatting
 - Use the mini app PR template at `.github/PULL_REQUEST_TEMPLATE/mini-app.md` when adding mini apps

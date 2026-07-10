@@ -65,6 +65,9 @@ jobs:
             process.exit(1)
           EOF
 
+      - name: Validate mini app categories
+        run: cd src && pnpm run validate:mini-app-categories
+
       - name: Typecheck
         run: cd src && pnpm run typecheck
 

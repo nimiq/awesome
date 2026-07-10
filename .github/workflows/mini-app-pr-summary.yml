@@ -92,6 +92,7 @@ jobs:
                 name: app.name ?? '',
                 url: app.url ?? '',
                 type: app.type ?? '',
+                category: app.category ?? '',
                 description: app.description ?? '',
                 logo: app.logo ?? '',
                 source: app.source ?? null,
@@ -112,6 +113,7 @@ jobs:
                 escapeTable(app.name),
                 formatLink(app.url),
                 escapeTable(app.type),
+                escapeTable(app.category),
                 escapeTable(app.description),
                 formatLogo(app, change.source),
                 app.source ? formatLink(app.source) : '',
@@ -171,8 +173,8 @@ jobs:
 
             const table = changes.length > 0
               ? [
-                  '| Status | Name | URL | Type | Description | Logo | Source | Developer | Featured |',
-                  '| --- | --- | --- | --- | --- | --- | --- | --- | --- |',
+                  '| Status | Name | URL | Type | Category | Description | Logo | Source | Developer | Featured |',
+                  '| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |',
                   ...changes.map(formatRow).map(row => `| ${row} |`),
                 ].join('\n')
               : 'No added, edited, or removed mini app entries found.'
