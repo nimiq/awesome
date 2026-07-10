@@ -55,6 +55,17 @@
     "featured": false
   },
   {
+    "name": "Nimiq Test Mini App",
+    "url": "https://nimiq.com",
+    "type": "nimiq",
+    "category": "utilities",
+    "description": "Test test",
+    "logo": "",
+    "source": null,
+    "developer": "@Albermonte",
+    "featured": false
+  },
+  {
     "name": "Nimtris",
     "url": "https://nimtris.com",
     "type": "nimiq",
