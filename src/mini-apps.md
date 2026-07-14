@@ -5,6 +5,7 @@
 #### Games
 
 - ⭐ [Nimtris](https://nimtris.com) ([Source](https://github.com/eligioo/nimtris)) ([@Eligioo](https://github.com/Eligioo)): Block puzzle game that rewards your high scores with NIM while playing
+- [PlayNimiq](https://playnimiq.com/) ([@maestroi](https://github.com/maestroi)): Play skill-based games, compete on global leaderboards, and earn real NIM rewards. Connect your Nimiq wallet and prove your skills.
 
 #### Social
 

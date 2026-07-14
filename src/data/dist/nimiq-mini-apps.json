@@ -23,6 +23,18 @@
       "developer": "@harlski",
       "featured": false,
       "slug": "nimiq-space"
+    },
+    {
+      "name": "PlayNimiq",
+      "url": "https://playnimiq.com/",
+      "type": "nimiq",
+      "category": "games",
+      "description": "Play skill-based games, compete on global leaderboards, and earn real NIM rewards. Connect your Nimiq wallet and prove your skills.",
+      "logo": "",
+      "source": null,
+      "developer": "@maestroi",
+      "featured": false,
+      "slug": "playnimiq"
     }
   ],
   "evm": [
