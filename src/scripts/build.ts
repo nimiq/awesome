@@ -7,7 +7,7 @@ import { consola } from 'consola'
 import { $ } from 'execa'
 import { dirname, resolve } from 'pathe'
 import { array, boolean, literal, nullable, object, safeParse, string, union } from 'valibot'
-import { MINI_APP_CATEGORIES, MINI_APP_CATEGORY_LABELS, MiniAppCategorySchema } from './mini-app-categories.js'
+import { MINI_APP_CATEGORIES, MiniAppCategorySchema } from './mini-app-categories.js'
 import { optimizeAssets } from './optimize-assets.js'
 
 const __dirname = dirname('.')
@@ -799,7 +799,7 @@ async function main() {
 
       if (content)
         content += '\n'
-      content += `#### ${MINI_APP_CATEGORY_LABELS[category]}\n\n`
+      content += `#### ${category}\n\n`
       for (const app of categoryApps)
         content += formatMiniAppLine(app)
     }

@@ -56,7 +56,7 @@ This is a curated collection of Nimiq ecosystem projects with an automated build
 **Apps:** Categorized by type (Wallets, Infrastructure, E-commerce, Games, Insights, Promotion, Bots, Miner, Faucet)
 **Resources:** Categorized by type (developer-tool, documentation, core, rpc, ui, utils, validator, node, infrastructure)
 **Exchanges:** Alphabetically sorted list with logos and descriptions
-**Mini Apps:** Grouped by type (`nimiq`, `evm`) with one required primary category (`defi`, `exchanges`, `games`, `marketplaces`, `nfts`, `social`, `utilities`, or `wallets`), kept alphabetically by name in JSON, with featured entries displayed first
+**Mini Apps:** Grouped by type (`nimiq`, `evm`) with one required primary category (`Games`, `Social`, `Earning`, `Marketplaces`, `Productivity`, `Creator tools`, `Education`, `Health & fitness`, `Food & dining`, `Shopping & deals`, or `Lifestyle`), kept alphabetically by name in JSON, with featured entries displayed first
 **Explorers:** Grouped by network (`mainnet`, `testnet`)
 **RPC Servers:** Grouped by network (`mainnet`, `testnet`) and displayed with a public-server warning
 

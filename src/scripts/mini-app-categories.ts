@@ -1,28 +1,21 @@
 import { picklist } from 'valibot'
 
 export const MINI_APP_CATEGORIES = [
-  'defi',
-  'exchanges',
-  'games',
-  'marketplaces',
-  'nfts',
-  'social',
-  'utilities',
-  'wallets',
+  'Games',
+  'Social',
+  'Earning',
+  'Marketplaces',
+  'Productivity',
+  'Creator tools',
+  'Education',
+  'Health & fitness',
+  'Food & dining',
+  'Shopping & deals',
+  'Lifestyle',
 ] as const
 
 export type MiniAppCategory = (typeof MINI_APP_CATEGORIES)[number]
 export const MiniAppCategorySchema = picklist(MINI_APP_CATEGORIES)
-export const MINI_APP_CATEGORY_LABELS: Record<MiniAppCategory, string> = {
-  defi: 'DeFi',
-  exchanges: 'Exchanges',
-  games: 'Games',
-  marketplaces: 'Marketplaces',
-  nfts: 'NFTs',
-  social: 'Social',
-  utilities: 'Utilities',
-  wallets: 'Wallets',
-}
 
 const categoryList = MINI_APP_CATEGORIES.join(', ')
 

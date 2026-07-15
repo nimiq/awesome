@@ -2,14 +2,17 @@ import assert from 'node:assert/strict'
 import { safeParse } from 'valibot'
 
 const expectedCategories = [
-  'defi',
-  'exchanges',
-  'games',
-  'marketplaces',
-  'nfts',
-  'social',
-  'utilities',
-  'wallets',
+  'Games',
+  'Social',
+  'Earning',
+  'Marketplaces',
+  'Productivity',
+  'Creator tools',
+  'Education',
+  'Health & fitness',
+  'Food & dining',
+  'Shopping & deals',
+  'Lifestyle',
 ]
 
 let categoryModule: typeof import('./mini-app-categories.js') | undefined
@@ -22,40 +25,30 @@ catch {
 }
 
 assert.deepEqual(categoryModule.MINI_APP_CATEGORIES, expectedCategories)
-assert.deepEqual(categoryModule.MINI_APP_CATEGORY_LABELS, {
-  defi: 'DeFi',
-  exchanges: 'Exchanges',
-  games: 'Games',
-  marketplaces: 'Marketplaces',
-  nfts: 'NFTs',
-  social: 'Social',
-  utilities: 'Utilities',
-  wallets: 'Wallets',
-})
 
 assert.equal(typeof categoryModule.getMiniAppCategoryErrors, 'function')
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
-  { name: 'Nimtris', category: 'games' },
-  { name: 'OpenSea', category: 'nfts' },
+  { name: 'Nimtris', category: 'Games' },
+  { name: 'OpenSea', category: 'Marketplaces' },
 ]), [])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
   { name: 'Nimtris' },
 ]), [
-  '[Nimtris] Category is required. Choose one of: defi, exchanges, games, marketplaces, nfts, social, utilities, wallets.',
+  '[Nimtris] Category is required. Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle.',
 ])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
   { name: 'OpenSea', category: 'art' },
 ]), [
-  '[OpenSea] Unknown category "art". Choose one of: defi, exchanges, games, marketplaces, nfts, social, utilities, wallets.',
+  '[OpenSea] Unknown category "art". Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle.',
 ])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
-  { name: 'OpenSea', category: ['nfts'] },
+  { name: 'OpenSea', category: ['Marketplaces'] },
 ]), [
-  '[OpenSea] Category must be a string. Choose one of: defi, exchanges, games, marketplaces, nfts, social, utilities, wallets.',
+  '[OpenSea] Category must be a string. Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle.',
 ])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors({}), [
@@ -63,6 +56,6 @@ assert.deepEqual(categoryModule.getMiniAppCategoryErrors({}), [
 ])
 
 assert.ok(categoryModule.MiniAppCategorySchema, 'mini-app category schema should exist')
-assert.equal(safeParse(categoryModule.MiniAppCategorySchema, 'social').success, true)
+assert.equal(safeParse(categoryModule.MiniAppCategorySchema, 'Social').success, true)
 assert.equal(safeParse(categoryModule.MiniAppCategorySchema, 'art').success, false)
-assert.equal(safeParse(categoryModule.MiniAppCategorySchema, ['nfts']).success, false)
+assert.equal(safeParse(categoryModule.MiniAppCategorySchema, ['Marketplaces']).success, false)

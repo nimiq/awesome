@@ -7,7 +7,7 @@
 - **Name**: 
 - **URL**: 
 - **Type**: <!-- nimiq or evm -->
-- **Category**: <!-- defi, exchanges, games, marketplaces, nfts, social, utilities, or wallets -->
+- **Category**: <!-- Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, or Lifestyle -->
 - **Description**: <!-- One-line description (under 200 chars) -->
 - **Logo**: <!-- SVG file in src/data/assets/mini-apps/ named {developer}-{appName}.svg (e.g. albermote-nimiq-wallet.svg). Must be a simple icon that works at small sizes. Leave empty if not provided. -->
 - **Source Code**: <!-- GitHub/GitLab repo URL, or N/A -->
@@ -18,7 +18,7 @@
 - [ ] App is accessible and functional at the provided URL
 - [ ] Description is concise (under 200 characters)
 - [ ] Type is either `nimiq` or `evm`
-- [ ] Category is exactly one of `defi`, `exchanges`, `games`, `marketplaces`, `nfts`, `social`, `utilities`, or `wallets`
+- [ ] Category is exactly one of `Games`, `Social`, `Earning`, `Marketplaces`, `Productivity`, `Creator tools`, `Education`, `Health & fitness`, `Food & dining`, `Shopping & deals`, or `Lifestyle`
 - [ ] Entry added to `src/data/nimiq-mini-apps.json` **in alphabetical order** (by name, case-insensitive)
 - [ ] Logo is **SVG format only**, named `{developer}-{appName}.svg` (lowercase, hyphens for spaces), and placed in `src/data/assets/mini-apps/`
 - [ ] `featured` flag is set to `false` (only maintainers can feature apps)
