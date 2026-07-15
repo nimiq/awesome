@@ -193,27 +193,21 @@
 
 ### EVM
 
-#### DeFi
+#### Earning
 
 - [Aave](https://app.aave.com) ([Source](https://github.com/aave/aave-v4)): Decentralized lending and borrowing protocol for earning interest on deposits
 - [Polymarket](https://polymarket.com): Prediction market platform for trading on real-world event outcomes
 
-#### Exchanges
+#### Marketplaces
 
 - [1inch](https://1inch.com/): DEX aggregator that finds the best swap rates across multiple decentralized exchanges
+- [OpenSea](https://opensea.io): The largest NFT marketplace for buying, selling, and discovering digital assets
 - [Uniswap](https://app.uniswap.org) ([Source](https://github.com/Uniswap/v4-core)): Leading decentralized exchange for swapping ERC-20 tokens
 
-#### NFTs
-
-- [OpenSea](https://opensea.io): The largest NFT marketplace for buying, selling, and discovering digital assets
-
-#### Utilities
-
-- [DappRadar](https://dappradar.com): Platform for discovering and tracking decentralized applications across multiple blockchains
-
-#### Wallets
+#### Productivity
 
 - ⭐ [EVM Mini Wallet](https://evm-mini-wallet.vercel.app) ([Source](https://github.com/Albermonte/evm-mini-wallet)) ([@Albermonte](https://github.com/Albermonte)): Lightweight, mobile-first wallet for sending and receiving tokens across EVM chains
+- [DappRadar](https://dappradar.com): Platform for discovering and tracking decentralized applications across multiple blockchains
 
 <!-- /automd -->
 
