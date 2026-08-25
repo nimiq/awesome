@@ -196,5 +196,14 @@
     "logo": "./assets/mini-apps/harlski-nimiq-space.svg",
     "screenshot": "",
     "developer": "@harlski"
+  },
+  {
+    "name": "NIMmesh",
+    "description": "Pay with NIM when there is no internet. A Bluetooth mesh wallet that relays signed transactions phone to phone and broadcasts at the first online hop.",
+    "link": "https://nimiq.tech",
+    "type": "Wallets",
+    "logo": "./assets/nimmesh.svg",
+    "screenshot": "",
+    "developer": "@Andjroo111"
   }
 ]
