@@ -192,7 +192,7 @@
 
 - [Nimiq Space](https://nimiq.space) ([Source](https://github.com/harlski/nspace)) ([@harlski](https://github.com/harlski)): Social-first multiplayer sandbox, build, create, earn.
 
-#### E-commerce
+### E-commerce
 
 - ⭐ [NimShop](https://nimshop.vercel.app) ([Source](https://github.com/ibis01/Nimshop)) ([@ibis01](https://github.com/ibis01)): AI-powered product discovery and native NIM payments.
 - 
