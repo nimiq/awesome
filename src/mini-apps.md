@@ -3,6 +3,7 @@
 ### Nimiq
 
 - ⭐ [Nimtris](https://nimtris.com) ([Source](https://github.com/eligioo/nimtris)) ([@Eligioo](https://github.com/Eligioo)): Block puzzle game that rewards your high scores with NIM while playing
+- [Cinima](https://cinima.app) ([Source](https://github.com/Harlski/cinima)) ([@Harlski](https://github.com/Harlski)): Social taste discovery for movies and TV. Favorite titles you love, Recommend the ones that stand out, and find what to watch through taste overlap.
 - [Hex Hopper](https://dinohop.app) ([@onmax](https://github.com/onmax)): Fast Nimiq Pay arcade mini-game where players dodge obstacles, collect hexagons, and claim rewards
 
 ### EVM
