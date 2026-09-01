@@ -1,40 +1,134 @@
-{
-  "name": "nimiq-awesome-src",
-  "type": "module",
-  "version": "1.0.0",
-  "packageManager": "pnpm@10.33.0",
-  "description": "A collection of Nimiq apps and services.",
-  "keywords": [],
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "typecheck": "tsc --noEmit",
-    "test:mini-app-categories": "esno ./scripts/mini-app-categories.test.ts",
-    "test:optimize-assets": "esno ./scripts/optimize-assets.test.ts",
-    "validate:mini-app-categories": "pnpm run test:mini-app-categories && esno ./scripts/validate-mini-app-categories.ts",
-    "build": "esno ./scripts/build.ts"
+[
+  {
+    "name": "1inch",
+    "url": "https://1inch.com/",
+    "type": "evm",
+    "category": "Marketplaces",
+    "description": "DEX aggregator that finds the best swap rates across multiple decentralized exchanges",
+    "logo": "",
+    "source": null,
+    "developer": null,
+    "featured": false
   },
-  "dependencies": {
-    "@iconify/utils": "^3.0.2",
-    "esno": "^4.8.0",
-    "execa": "^9.5.2",
-    "svgo": "^4.0.0"
+  {
+    "name": "Aave",
+    "url": "https://app.aave.com",
+    "type": "evm",
+    "category": "Earning",
+    "description": "Decentralized lending and borrowing protocol for earning interest on deposits",
+    "logo": "",
+    "source": "https://github.com/aave/aave-v4",
+    "developer": null,
+    "featured": false
   },
-  "devDependencies": {
-    "@antfu/eslint-config": "^4.12.0",
-    "@types/node": "^22.15.3",
-    "automd": "^0.4.2",
-    "consola": "^3.4.2",
-    "eslint": "^9.25.1",
-    "eslint-plugin-format": "^1.0.1",
-    "pathe": "^2.0.3",
-    "typescript": "^5.8.3",
-    "valibot": "1.0.0"
+  {
+    "name": "Cinima",
+    "url": "https://cinima.app",
+    "type": "nimiq",
+    "category": "Social",
+    "description": "Social taste discovery for movies and TV. Favorite titles you love, Recommend the ones that stand out, and find what to watch through taste overlap.",
+    "logo": "./assets/mini-apps/harlski-cinima.svg",
+    "source": "https://github.com/Harlski/cinima",
+    "developer": "@Harlski",
+    "featured": false
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
+  {
+    "name": "DappRadar",
+    "url": "https://dappradar.com",
+    "type": "evm",
+    "category": "Productivity",
+    "description": "Platform for discovering and tracking decentralized applications across multiple blockchains",
+    "logo": "",
+    "source": null,
+    "developer": null,
+    "featured": false
+  },
+  {
+    "name": "EVM Mini Wallet",
+    "url": "https://evm-mini-wallet.vercel.app",
+    "type": "evm",
+    "category": "Productivity",
+    "description": "Lightweight, mobile-first wallet for sending and receiving tokens across EVM chains",
+    "logo": "./assets/mini-apps/albermonte-evm-mini-wallet.svg",
+    "source": "https://github.com/Albermonte/evm-mini-wallet",
+    "developer": "@Albermonte",
+    "featured": true
+  },
+  {
+    "name": "Nimiq Space",
+    "url": "https://nimiq.space",
+    "type": "nimiq",
+    "category": "Social",
+    "description": "Social-first multiplayer sandbox, build, create, earn.",
+    "logo": "./assets/mini-apps/harlski-nimiq-space.svg",
+    "source": "https://github.com/harlski/nspace",
+    "developer": "@harlski",
+    "featured": false
+  },
+  {
+    "name": "NimShop",
+    "url": "https://nimshop.vercel.app",
+    "type": "nimiq",
+    "category": "Shopping & deals",
+    "description": "AI-powered product discovery and native NIM payments",
+    "logo": "",
+    "source": "https://github.com/ibis01/Nimshop",
+    "developer": "@ibis01",
+    "featured": false
+  },
+  {
+    "name": "Nimtris",
+    "url": "https://nimtris.com",
+    "type": "nimiq",
+    "category": "Games",
+    "description": "Block puzzle game that rewards your high scores with NIM while playing",
+    "logo": "./assets/mini-apps/eligioo-nimtris.svg",
+    "source": "https://github.com/eligioo/nimtris",
+    "developer": "@Eligioo",
+    "featured": true
+  },
+  {
+    "name": "OpenSea",
+    "url": "https://opensea.io",
+    "type": "evm",
+    "category": "Marketplaces",
+    "description": "The largest NFT marketplace for buying, selling, and discovering digital assets",
+    "logo": "",
+    "source": null,
+    "developer": null,
+    "featured": false
+  },
+  {
+    "name": "PlayNimiq",
+    "url": "https://playnimiq.com/",
+    "type": "nimiq",
+    "category": "Games",
+    "description": "Play skill-based games, compete on global leaderboards, and earn real NIM rewards. Connect your Nimiq wallet and prove your skills.",
+    "logo": "",
+    "source": null,
+    "developer": "@maestroi",
+    "featured": false
+  },
+  {
+    "name": "Polymarket",
+    "url": "https://polymarket.com",
+    "type": "evm",
+    "category": "Earning",
+    "description": "Prediction market platform for trading on real-world event outcomes",
+    "logo": "",
+    "source": null,
+    "developer": null,
+    "featured": false
+  },
+  {
+    "name": "Uniswap",
+    "url": "https://app.uniswap.org",
+    "type": "evm",
+    "category": "Marketplaces",
+    "description": "Leading decentralized exchange for swapping ERC-20 tokens",
+    "logo": "",
+    "source": "https://github.com/Uniswap/v4-core",
+    "developer": null,
+    "featured": false
   }
-}
+]
