@@ -11,6 +11,7 @@
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "test:mini-app-categories": "esno ./scripts/mini-app-categories.test.ts",
+    "test:optimize-assets": "esno ./scripts/optimize-assets.test.ts",
     "validate:mini-app-categories": "pnpm run test:mini-app-categories && esno ./scripts/validate-mini-app-categories.ts",
     "build": "esno ./scripts/build.ts"
   },

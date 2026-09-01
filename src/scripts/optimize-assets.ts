@@ -31,10 +31,10 @@ async function findAllSvgs(dir: string): Promise<string[]> {
   return svgFiles
 }
 
-function detectFillColors(svgContent: string): string[] {
-  const fillRegex = /fill=["']([^"']+)["']/g
+function detectPaintColors(svgContent: string): string[] {
+  const paintRegex = /(?:fill|stroke)=["']([^"']+)["']/g
   const colors = new Set<string>()
-  let match = fillRegex.exec(svgContent)
+  let match = paintRegex.exec(svgContent)
 
   while (match !== null) {
     const colorValue = match[1]
@@ -45,18 +45,18 @@ function detectFillColors(svgContent: string): string[] {
         colors.add(color)
       }
     }
-    match = fillRegex.exec(svgContent)
+    match = paintRegex.exec(svgContent)
   }
 
   return Array.from(colors)
 }
 
-function replaceWithCurrentColor(svgContent: string, color: string): string {
+function replacePaintWithCurrentColor(svgContent: string, color: string): string {
   // Escape regex metacharacters in color (e.g., rgb(255, 0, 0) -> rgb\(255, 0, 0\))
   const escapedColor = color.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  // Match fill with either single or double quotes
-  const regex = new RegExp(`fill=["']${escapedColor}["']`, 'gi')
-  return svgContent.replace(regex, 'fill="currentColor"')
+  // Match fill and stroke with either single or double quotes
+  const regex = new RegExp(`(fill|stroke)=["']${escapedColor}["']`, 'gi')
+  return svgContent.replace(regex, '$1="currentColor"')
 }
 
 async function optimizeSvg(filePath: string): Promise<OptimizationResult> {
@@ -68,13 +68,13 @@ async function optimizeSvg(filePath: string): Promise<OptimizationResult> {
   const shouldKeepColor = keepColorFiles.some(file => filePath.includes(file))
 
   // Detect colors before optimization
-  const colors = detectFillColors(content)
+  const colors = detectPaintColors(content)
   const hadSingleColor = colors.length === 1
 
   // Replace with currentColor if single color (unless excluded)
   const singleColor = hadSingleColor ? colors[0] : undefined
   if (singleColor && !shouldKeepColor) {
-    content = replaceWithCurrentColor(content, singleColor)
+    content = replacePaintWithCurrentColor(content, singleColor)
   }
 
   // Run svgo optimization (which includes cleanup)
