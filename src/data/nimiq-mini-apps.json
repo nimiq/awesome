@@ -22,6 +22,17 @@
     "featured": false
   },
   {
+    "name": "Cinima",
+    "url": "https://cinima.app",
+    "type": "nimiq",
+    "category": "Social",
+    "description": "Social taste discovery for movies and TV. Favorite titles you love, Recommend the ones that stand out, and find what to watch through taste overlap.",
+    "logo": "./assets/mini-apps/harlski-cinima.svg",
+    "source": "https://github.com/Harlski/cinima",
+    "developer": "@Harlski",
+    "featured": false
+  },
+  {
     "name": "DappRadar",
     "url": "https://dappradar.com",
     "type": "evm",
