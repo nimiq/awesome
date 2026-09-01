@@ -13,6 +13,18 @@
       "slug": "nimtris"
     },
     {
+      "name": "Cinima",
+      "url": "https://cinima.app",
+      "type": "nimiq",
+      "category": "Social",
+      "description": "Social taste discovery for movies and TV. Favorite titles you love, Recommend the ones that stand out, and find what to watch through taste overlap.",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/harlski-cinima.svg",
+      "source": "https://github.com/Harlski/cinima",
+      "developer": "@Harlski",
+      "featured": false,
+      "slug": "cinima"
+    },
+    {
       "name": "Nimiq Space",
       "url": "https://nimiq.space",
       "type": "nimiq",

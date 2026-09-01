@@ -189,6 +189,7 @@
 
 #### Social
 
+- [Cinima](https://cinima.app) ([Source](https://github.com/Harlski/cinima)) ([@Harlski](https://github.com/Harlski)): Social taste discovery for movies and TV. Favorite titles you love, Recommend the ones that stand out, and find what to watch through taste overlap.
 - [Nimiq Space](https://nimiq.space) ([Source](https://github.com/harlski/nspace)) ([@harlski](https://github.com/harlski)): Social-first multiplayer sandbox, build, create, earn.
 
 ### EVM
