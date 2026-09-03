@@ -110,5 +110,12 @@
     "url": "https://www.mexc.com/",
     "description": "",
     "richDescription": null
+  },
+  {
+    "name": "EIDEX",
+    "logo": "assets/exchanges/eidex.svg",
+    "url": "https://eidex.io/screener",
+    "description": "Non-custodial route screener that compares live NIM quotes from swap providers and ranks them by output amount",
+    "richDescription": null
   }
 ]
