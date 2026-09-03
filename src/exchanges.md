@@ -9,6 +9,7 @@ Where you can buy, sell, or trade Nimiq:
 - [Coinpay](https://coinpay.cr/)
 - [Coinspot](https://www.coinspot.com.au/)
 - [CoinSwitch](https://coinswitch.co/)
+- [EIDEX](https://eidex.io/screener): Non-custodial route screener that compares live NIM quotes from swap providers and ranks them by output amount
 - [Gate.io](https://gate.io/)
 - [HitBTC](https://hitbtc.com/)
 - [Kriptomat](https://kriptomat.io/)
