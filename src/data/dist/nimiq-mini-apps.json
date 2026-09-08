@@ -25,6 +25,18 @@
       "slug": "cinima"
     },
     {
+      "name": "NimBooks",
+      "url": "https://nimbooks.subimpact.net",
+      "type": "nimiq",
+      "category": "Productivity",
+      "description": "The books for your Nimiq wallet: balances, history, statements, payment requests, and signed proof-of-payment receipts.",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/subimpact-nimbooks.svg",
+      "source": "https://github.com/subimpact/nimbooks",
+      "developer": "@subimpact",
+      "featured": false,
+      "slug": "nimbooks"
+    },
+    {
       "name": "Nimiq Space",
       "url": "https://nimiq.space",
       "type": "nimiq",
