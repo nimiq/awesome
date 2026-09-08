@@ -16,6 +16,10 @@
 
 - [NimBooks](https://nimbooks.subimpact.net) ([Source](https://github.com/subimpact/nimbooks)) ([@subimpact](https://github.com/subimpact)): The books for your Nimiq wallet: balances, history, statements, payment requests, and signed proof-of-payment receipts.
 
+#### Shopping & deals
+
+- [NimStamp](https://nimstamp.vercel.app) ([Source](https://github.com/big14way/nimstamp)) ([@big14way](https://github.com/big14way)): Self-serve loyalty stamp cards for any business. Customers earn a stamp automatically when they pay in NIM; rewards are redeemed with a wallet signature.
+
 ### EVM
 
 #### Earning
