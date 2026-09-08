@@ -55,6 +55,17 @@
     "featured": true
   },
   {
+    "name": "NimBooks",
+    "url": "https://nimbooks.subimpact.net",
+    "type": "nimiq",
+    "category": "Productivity",
+    "description": "The books for your Nimiq wallet: balances, history, statements, payment requests, and signed proof-of-payment receipts.",
+    "logo": "./assets/mini-apps/subimpact-nimbooks.svg",
+    "source": "https://github.com/subimpact/nimbooks",
+    "developer": "@subimpact",
+    "featured": false
+  },
+  {
     "name": "Nimiq Space",
     "url": "https://nimiq.space",
     "type": "nimiq",
