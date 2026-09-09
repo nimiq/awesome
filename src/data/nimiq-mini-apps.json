@@ -55,6 +55,17 @@
     "featured": true
   },
   {
+    "name": "Knock",
+    "url": "https://knockchat.org",
+    "type": "nimiq",
+    "category": "Social",
+    "description": "Chat on Nimiq. For friends, family and community - not for spam.",
+    "logo": "./assets/mini-apps/kaichaosun-knock.svg",
+    "source": null,
+    "developer": "@kaichaosun",
+    "featured": false
+  },
+  {
     "name": "NimBooks",
     "url": "https://nimbooks.subimpact.net",
     "type": "nimiq",
