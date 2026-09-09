@@ -61,7 +61,7 @@
     "category": "Social",
     "description": "Chat on Nimiq. For friends, family and community - not for spam.",
     "logo": "./assets/mini-apps/kaichaosun-knock.svg",
-    "source": null,
+    "source": "https://github.com/kaichaosun/knock-chat",
     "developer": "@kaichaosun",
     "featured": false
   },
