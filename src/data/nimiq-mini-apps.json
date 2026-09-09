@@ -132,6 +132,17 @@
     "featured": false
   },
   {
+    "name": "Stakes",
+    "url": "https://app.stakes.day",
+    "type": "nimiq",
+    "category": "Lifestyle",
+    "description": "Win your moment. Bank the day. Put a little NIM on a goal and keep it a day at a time, stamped on the Nimiq chain from your own wallet. Day one is free.",
+    "logo": "./assets/mini-apps/surfstyk-stakes.svg",
+    "source": "https://github.com/surfstyk/stakes",
+    "developer": "@surfstyk",
+    "featured": false
+  },
+  {
     "name": "Uniswap",
     "url": "https://app.uniswap.org",
     "type": "evm",
