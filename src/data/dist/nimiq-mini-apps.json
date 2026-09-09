@@ -49,6 +49,18 @@
       "slug": "nimiq-space"
     },
     {
+      "name": "NimJump",
+      "url": "https://nimjump.zetashare.com",
+      "type": "nimiq",
+      "category": "Games",
+      "description": "Earn Nimiq jump, dodge, and climb as high as you can with tap or gyro-tilt controls.",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/emrealt34-nimjump.svg",
+      "source": "https://github.com/nimjump/game",
+      "developer": "@emrealt34",
+      "featured": false,
+      "slug": "nimjump"
+    },
+    {
       "name": "PlayNimiq",
       "url": "https://playnimiq.com/",
       "type": "nimiq",

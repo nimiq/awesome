@@ -185,6 +185,7 @@
 #### Games
 
 - ⭐ [Nimtris](https://nimtris.com) ([Source](https://github.com/eligioo/nimtris)) ([@Eligioo](https://github.com/Eligioo)): Block puzzle game that rewards your high scores with NIM while playing
+- [NimJump](https://nimjump.zetashare.com) ([Source](https://github.com/nimjump/game)) ([@emrealt34](https://github.com/emrealt34)): Earn Nimiq jump, dodge, and climb as high as you can with tap or gyro-tilt controls.
 - [PlayNimiq](https://playnimiq.com/) ([@maestroi](https://github.com/maestroi)): Play skill-based games, compete on global leaderboards, and earn real NIM rewards. Connect your Nimiq wallet and prove your skills.
 
 #### Social
