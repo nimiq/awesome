@@ -121,6 +121,17 @@
     "featured": false
   },
   {
+    "name": "PACT",
+    "url": "https://pact-nimiq.vercel.app",
+    "type": "nimiq",
+    "category": "Productivity",
+    "description": "Turn a spoken deal into terms both sides sign with their Nimiq wallet, then track delivery and pay straight from the agreement.",
+    "logo": "./assets/mini-apps/khaleed0019-pact.svg",
+    "source": "https://github.com/khaleed0019/pact",
+    "developer": "@khaleed0019",
+    "featured": false
+  },
+  {
     "name": "PlayNimiq",
     "url": "https://playnimiq.com/",
     "type": "nimiq",
