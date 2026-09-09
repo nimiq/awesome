@@ -11,6 +11,7 @@
 #### Social
 
 - [Cinima](https://cinima.app) ([Source](https://github.com/Harlski/cinima)) ([@Harlski](https://github.com/Harlski)): Social taste discovery for movies and TV. Favorite titles you love, Recommend the ones that stand out, and find what to watch through taste overlap.
+- [Knock](https://knockchat.org) ([Source](https://github.com/kaichaosun/knock-chat)) ([@kaichaosun](https://github.com/kaichaosun)): Chat on Nimiq. For friends, family and community - not for spam.
 - [Nimiq Space](https://nimiq.space) ([Source](https://github.com/harlski/nspace)) ([@harlski](https://github.com/harlski)): Social-first multiplayer sandbox, build, create, earn.
 
 #### Productivity

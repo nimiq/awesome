@@ -25,6 +25,18 @@
       "slug": "cinima"
     },
     {
+      "name": "Knock",
+      "url": "https://knockchat.org",
+      "type": "nimiq",
+      "category": "Social",
+      "description": "Chat on Nimiq. For friends, family and community - not for spam.",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/kaichaosun-knock.svg",
+      "source": "https://github.com/kaichaosun/knock-chat",
+      "developer": "@kaichaosun",
+      "featured": false,
+      "slug": "knock"
+    },
+    {
       "name": "NimBooks",
       "url": "https://nimbooks.subimpact.net",
       "type": "nimiq",
