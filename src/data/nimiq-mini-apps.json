@@ -158,7 +158,7 @@
     "url": "https://qorbitpay.xyz",
     "type": "evm",
     "category": "On-chain services",
-    "description": "Hold, trade and gift tokenized US stocks and ETFs from Ondo and xStocks on BNB Chain, with live prices and an optional USDT or NIM tip on gifts.",
+    "description": "Hold, trade and gift tokenized US stocks and ETFs from Ondo on BNB Chain, with live prices, fair-price swap protection and USDT or NIM tips.",
     "logo": "./assets/mini-apps/davieslennox0-qorbit.svg",
     "source": "https://github.com/davieslennox0/qorbit-nimiq",
     "developer": "@davieslennox0",
