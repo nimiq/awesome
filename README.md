@@ -197,6 +197,7 @@
 #### Productivity
 
 - [NimBooks](https://nimbooks.subimpact.net) ([Source](https://github.com/subimpact/nimbooks)) ([@subimpact](https://github.com/subimpact)): The books for your Nimiq wallet: balances, history, statements, payment requests, and signed proof-of-payment receipts.
+- [PACT](https://pact-nimiq.vercel.app) ([Source](https://github.com/khaleed0019/pact)) ([@khaleed0019](https://github.com/khaleed0019)): Turn a spoken deal into terms both sides sign with their Nimiq wallet, then track delivery and pay straight from the agreement.
 
 ### EVM
 
