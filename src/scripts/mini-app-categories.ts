@@ -12,6 +12,7 @@ export const MINI_APP_CATEGORIES = [
   'Food & dining',
   'Shopping & deals',
   'Lifestyle',
+  'On-chain services',
 ] as const
 
 export type MiniAppCategory = (typeof MINI_APP_CATEGORIES)[number]
