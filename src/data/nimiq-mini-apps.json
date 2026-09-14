@@ -154,6 +154,17 @@
     "featured": false
   },
   {
+    "name": "Qorbit",
+    "url": "https://qorbitpay.xyz",
+    "type": "evm",
+    "category": "On-chain services",
+    "description": "Hold, trade and gift tokenized US stocks and ETFs from Ondo on BNB Chain, with live prices, fair-price swap protection and USDT or NIM tips.",
+    "logo": "./assets/mini-apps/davieslennox0-qorbit.svg",
+    "source": "https://github.com/davieslennox0/qorbit-nimiq",
+    "developer": "@davieslennox0",
+    "featured": false
+  },
+  {
     "name": "Uniswap",
     "url": "https://app.uniswap.org",
     "type": "evm",
