@@ -13,6 +13,7 @@ const expectedCategories = [
   'Food & dining',
   'Shopping & deals',
   'Lifestyle',
+  'On-chain services',
 ]
 
 let categoryModule: typeof import('./mini-app-categories.js') | undefined
@@ -31,24 +32,25 @@ assert.equal(typeof categoryModule.getMiniAppCategoryErrors, 'function')
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
   { name: 'Nimtris', category: 'Games' },
   { name: 'OpenSea', category: 'Marketplaces' },
+  { name: 'On-chain app', category: 'On-chain services' },
 ]), [])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
   { name: 'Nimtris' },
 ]), [
-  '[Nimtris] Category is required. Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle.',
+  '[Nimtris] Category is required. Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle, On-chain services.',
 ])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
   { name: 'OpenSea', category: 'art' },
 ]), [
-  '[OpenSea] Unknown category "art". Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle.',
+  '[OpenSea] Unknown category "art". Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle, On-chain services.',
 ])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors([
   { name: 'OpenSea', category: ['Marketplaces'] },
 ]), [
-  '[OpenSea] Category must be a string. Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle.',
+  '[OpenSea] Category must be a string. Choose one of: Games, Social, Earning, Marketplaces, Productivity, Creator tools, Education, Health & fitness, Food & dining, Shopping & deals, Lifestyle, On-chain services.',
 ])
 
 assert.deepEqual(categoryModule.getMiniAppCategoryErrors({}), [
@@ -57,5 +59,6 @@ assert.deepEqual(categoryModule.getMiniAppCategoryErrors({}), [
 
 assert.ok(categoryModule.MiniAppCategorySchema, 'mini-app category schema should exist')
 assert.equal(safeParse(categoryModule.MiniAppCategorySchema, 'Social').success, true)
+assert.equal(safeParse(categoryModule.MiniAppCategorySchema, 'On-chain services').success, true)
 assert.equal(safeParse(categoryModule.MiniAppCategorySchema, 'art').success, false)
 assert.equal(safeParse(categoryModule.MiniAppCategorySchema, ['Marketplaces']).success, false)

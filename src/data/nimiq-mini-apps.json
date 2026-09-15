@@ -55,6 +55,17 @@
     "featured": true
   },
   {
+    "name": "Knock",
+    "url": "https://knockchat.org",
+    "type": "nimiq",
+    "category": "Social",
+    "description": "Chat on Nimiq. For friends, family and community - not for spam.",
+    "logo": "./assets/mini-apps/kaichaosun-knock.svg",
+    "source": "https://github.com/kaichaosun/knock-chat",
+    "developer": "@kaichaosun",
+    "featured": false
+  },
+  {
     "name": "NimBooks",
     "url": "https://nimbooks.subimpact.net",
     "type": "nimiq",
@@ -74,6 +85,17 @@
     "logo": "./assets/mini-apps/harlski-nimiq-space.svg",
     "source": "https://github.com/harlski/nspace",
     "developer": "@harlski",
+    "featured": false
+  },
+  {
+    "name": "NimJump",
+    "url": "https://nimjump.zetashare.com",
+    "type": "nimiq",
+    "category": "Games",
+    "description": "Earn Nimiq jump, dodge, and climb as high as you can with tap or gyro-tilt controls.",
+    "logo": "./assets/mini-apps/emrealt34-nimjump.svg",
+    "source": "https://github.com/nimjump/game",
+    "developer": "@emrealt34",
     "featured": false
   },
   {
@@ -107,6 +129,17 @@
     "logo": "",
     "source": null,
     "developer": null,
+    "featured": false
+  },
+  {
+    "name": "PACT",
+    "url": "https://pact-nimiq.vercel.app",
+    "type": "nimiq",
+    "category": "Productivity",
+    "description": "Turn a spoken deal into terms both sides sign with their Nimiq wallet, then track delivery and pay straight from the agreement.",
+    "logo": "./assets/mini-apps/khaleed0019-pact.svg",
+    "source": "https://github.com/khaleed0019/pact",
+    "developer": "@khaleed0019",
     "featured": false
   },
   {
