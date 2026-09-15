@@ -73,6 +73,18 @@
       "slug": "nimjump"
     },
     {
+      "name": "NimStamp",
+      "url": "https://nimstamp.vercel.app",
+      "type": "nimiq",
+      "category": "Shopping & deals",
+      "description": "Self-serve loyalty stamp cards for any business. Customers earn a stamp automatically when they pay in NIM; rewards are redeemed with a wallet signature.",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/big14way-nimstamp.svg",
+      "source": "https://github.com/big14way/nimstamp",
+      "developer": "@big14way",
+      "featured": false,
+      "slug": "nimstamp"
+    },
+    {
       "name": "PACT",
       "url": "https://pact-nimiq.vercel.app",
       "type": "nimiq",
