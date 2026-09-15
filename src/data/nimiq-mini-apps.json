@@ -55,6 +55,17 @@
     "featured": true
   },
   {
+    "name": "Get ransom",
+    "url": "https://get-ransom.vercel.app",
+    "type": "nimiq",
+    "category": "Earning",
+    "description": "Get Ransom puts NIM bounties on GitHub issues. Import an issue, sign a promise for the pot, claim with a PR. On merge, the creator pays you from Nimiq Pay. No platform escrow.",
+    "logo": "./assets/mini-apps/jr-kenny-get-ransom.svg",
+    "source": "https://github.com/Jr-kenny/get-ransom",
+    "developer": "@Jr-kenny",
+    "featured": false
+  },
+  {
     "name": "Knock",
     "url": "https://knockchat.org",
     "type": "nimiq",
