@@ -154,6 +154,17 @@
     "featured": false
   },
   {
+    "name": "Rewind",
+    "url": "https://rewind-rho.vercel.app",
+    "type": "nimiq",
+    "category": "On-chain services",
+    "description": "Refunds for NIM payments. The buyer signs a one-time request in Nimiq Pay, and the payment and refund are both verified on chain. Try it with a 0.01 NIM demo.",
+    "logo": "./assets/mini-apps/harshyadav442277-rewind.svg",
+    "source": "https://github.com/Harshyadav442277/rewind",
+    "developer": "@Harshyadav442277",
+    "featured": false
+  },
+  {
     "name": "Uniswap",
     "url": "https://app.uniswap.org",
     "type": "evm",
