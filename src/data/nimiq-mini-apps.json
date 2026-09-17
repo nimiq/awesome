@@ -99,6 +99,17 @@
     "featured": false
   },
   {
+    "name": "NimTrace",
+    "url": "https://nimtrace.vercel.app",
+    "type": "nimiq",
+    "category": "On-chain services",
+    "description": "Wallet-owned product passports: direct NIM checkout, independent payment verification, warranty tracking, and transferable ownership history.",
+    "logo": "./assets/mini-apps/ecstaceelor-nimtrace.svg",
+    "source": "https://github.com/EcstaceeLOR/NimTrace",
+    "developer": "@EcstaceeLOR",
+    "featured": false
+  },
+  {
     "name": "Nimtris",
     "url": "https://nimtris.com",
     "type": "nimiq",
