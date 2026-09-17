@@ -22,6 +22,17 @@
     "featured": false
   },
   {
+    "name": "BUMP",
+    "url": "https://prod.bump.roberthq.com",
+    "type": "nimiq",
+    "category": "Social",
+    "description": "One message slot for everyone. Replace it by paying 1.25x, and the person you knocked off gets the money. The loser cashes out.",
+    "logo": "./assets/mini-apps/0-robert-bump.svg",
+    "source": "https://github.com/0-robert/nimiq_bump",
+    "developer": "@0-robert",
+    "featured": false
+  },
+  {
     "name": "Cinima",
     "url": "https://cinima.app",
     "type": "nimiq",
