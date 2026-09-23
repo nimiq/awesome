@@ -136,6 +136,14 @@
     "author": "@albermonte"
   },
   {
+    "type": "validator",
+    "name": "Auto Restake Bot",
+    "link": "https://github.com/subimpact/nimiq-restake-bot",
+    "source": "https://github.com/subimpact/nimiq-restake-bot",
+    "description": "Auto-compounder for Nimiq validators: restakes rewards to stakers proportionally, guards funds with a fail-closed sentinel, and ships the node watchdog. Production code powering the ImpactZero 0% fee pool.",
+    "author": "@subimpact"
+  },
+  {
     "type": "rpc",
     "name": "Open RPC server",
     "link": "https://rpc.nimiqwatch.com",
