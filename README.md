@@ -107,6 +107,7 @@
 
 - [Validators Dashboard & API](https://validators-api-mainnet.nuxt.dev) ([Source](https://github.com/nimiq/validators-api)) ([@nimiq](https://github.com/nimiq)): Dashboard and API for monitoring validators
 - [Telegram Bot for Staking Notifications](https://github.com/Albermonte/validator-election-bot) ([Source](https://github.com/Albermonte/validator-election-bot)) ([@albermonte](https://github.com/albermonte)): Sends alerts about validator elections on Telegram
+- [Auto Restake Bot](https://github.com/subimpact/nimiq-restake-bot) ([Source](https://github.com/subimpact/nimiq-restake-bot)) ([@subimpact](https://github.com/subimpact)): Auto-compounder for Nimiq validators: restakes rewards to stakers proportionally, guards funds with a fail-closed sentinel, and ships the node watchdog. Production code powering the ImpactZero 0% fee pool.
 
 ### Node
 
