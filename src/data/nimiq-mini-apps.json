@@ -154,6 +154,17 @@
     "featured": false
   },
   {
+    "name": "PROOF",
+    "url": "https://proof.nimagent.app",
+    "type": "nimiq",
+    "category": "Education",
+    "description": "PROOF is a skill verification marketplace, built as a Nimiq mini app. Traditional platforms certify that you watched something. It verifies that you can do a skill and turns it into verifiable income.",
+    "logo": "./assets/mini-apps/legendarytunzeverywhere-proof.svg",
+    "source": "https://github.com/LegendaryTunzeverywhere/PROOF",
+    "developer": "@LegendaryTunzeverywhere",
+    "featured": false
+  },
+  {
     "name": "Uniswap",
     "url": "https://app.uniswap.org",
     "type": "evm",
