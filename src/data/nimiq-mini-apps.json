@@ -77,6 +77,17 @@
     "featured": false
   },
   {
+    "name": "Nimicurl",
+    "url": "https://nimicurl.com",
+    "type": "nimiq",
+    "category": "Games",
+    "description": "Multiplayer \"slide on ice\" game that rewards you with NIM when you win",
+    "logo": "",
+    "source": "https://github.com/Danyx11/NIM-Ball",
+    "developer": "@Danyx11",
+    "featured": false
+  },
+  {
     "name": "Nimiq Space",
     "url": "https://nimiq.space",
     "type": "nimiq",
