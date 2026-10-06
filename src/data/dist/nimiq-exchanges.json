@@ -105,13 +105,6 @@
     "richDescription": null
   },
   {
-    "name": "MEXC",
-    "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/exchanges/mexc.svg",
-    "url": "https://www.mexc.com/",
-    "description": "",
-    "richDescription": null
-  },
-  {
     "name": "EIDEX",
     "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/exchanges/eidex.svg",
     "url": "https://eidex.io/screener",

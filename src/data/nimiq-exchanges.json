@@ -105,13 +105,6 @@
     "richDescription": null
   },
   {
-    "name": "MEXC",
-    "logo": "assets/exchanges/mexc.svg",
-    "url": "https://www.mexc.com/",
-    "description": "",
-    "richDescription": null
-  },
-  {
     "name": "EIDEX",
     "logo": "assets/exchanges/eidex.svg",
     "url": "https://eidex.io/screener",
