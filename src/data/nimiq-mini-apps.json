@@ -99,6 +99,17 @@
     "featured": false
   },
   {
+    "name": "NimSnap",
+    "url": "https://nimsnap.xyz/app",
+    "type": "nimiq",
+    "category": "Creator tools",
+    "description": "Turn any photo into a studio portrait, avatar, product shot or restored print for $0.10 a shot, paid in NIM. No account, no subscription.",
+    "logo": "./assets/mini-apps/mrnetwork0001-nimsnap.svg",
+    "source": "https://github.com/mrnetwork0001/NimSnap",
+    "developer": "@mrnetwork0001",
+    "featured": false
+  },
+  {
     "name": "Nimtris",
     "url": "https://nimtris.com",
     "type": "nimiq",
