@@ -45,15 +45,6 @@
     "developer": "@Eligioo"
   },
   {
-    "name": "Trust Wallet",
-    "description": "A wallet app for managing your coins on Android and iOS.",
-    "link": "https://trustwallet.com/nimiq-wallet",
-    "type": "Wallets",
-    "logo": "./assets/trust-wallet.svg",
-    "screenshot": "",
-    "developer": "@trustwallet"
-  },
-  {
     "name": "Cryptopayment.link",
     "description": "Get paid in crypto! Charge your customers with Nimiq, Bitcoin or Ethereum. Create a custom link and QR code in seconds.",
     "link": "https://cryptopayment.link",
