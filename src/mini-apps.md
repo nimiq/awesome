@@ -23,6 +23,10 @@
 
 - [NimStamp](https://nimstamp.vercel.app) ([Source](https://github.com/big14way/nimstamp)) ([@big14way](https://github.com/big14way)): Self-serve loyalty stamp cards for any business. Customers earn a stamp automatically when they pay in NIM; rewards are redeemed with a wallet signature.
 
+#### On-chain services
+
+- [Rewind](https://rewind-rho.vercel.app) ([Source](https://github.com/Harshyadav442277/rewind)) ([@Harshyadav442277](https://github.com/Harshyadav442277)): Refunds for NIM payments. The buyer signs a one-time request in Nimiq Pay, and the payment and refund are both verified on chain. Try it with a 0.01 NIM demo.
+
 ### EVM
 
 #### Earning
