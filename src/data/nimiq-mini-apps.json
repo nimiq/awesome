@@ -99,6 +99,17 @@
     "featured": false
   },
   {
+    "name": "NimShop",
+    "url": "https://shop.nimiqbase.com",
+    "type": "nimiq",
+    "category": "Shopping & deals",
+    "description": "Gift cards, eSIMs and mobile top-ups. Pay inside Nimiq Pay with NIM or USDT.",
+    "logo": "",
+    "source": "https://github.com/emrealt34/nimiqshop",
+    "developer": "@emrealt34",
+    "featured": false
+  },
+  {
     "name": "NimStamp",
     "url": "https://nimstamp.vercel.app",
     "type": "nimiq",
