@@ -201,6 +201,7 @@
 
 #### Shopping & deals
 
+- [NimShop](https://shop.nimiqbase.com) ([Source](https://github.com/emrealt34/nimiqshop)) ([@emrealt34](https://github.com/emrealt34)): Gift cards, eSIMs and mobile top-ups. Pay inside Nimiq Pay with NIM or USDT.
 - [NimStamp](https://nimstamp.vercel.app) ([Source](https://github.com/big14way/nimstamp)) ([@big14way](https://github.com/big14way)): Self-serve loyalty stamp cards for any business. Customers earn a stamp automatically when they pay in NIM; rewards are redeemed with a wallet signature.
 
 #### On-chain services
