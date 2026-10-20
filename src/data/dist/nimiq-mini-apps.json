@@ -13,6 +13,18 @@
       "slug": "nimtris"
     },
     {
+      "name": "AbaPay",
+      "url": "https://nim.abapays.com",
+      "type": "nimiq",
+      "category": "On-chain services",
+      "description": "Pay bills with NIM: Nigerian airtime, data, electricity, cable TV, exam PINs and bank transfers, plus phone top-ups in 140+ countries.",
+      "logo": "https://raw.githubusercontent.com/nimiq/awesome/main/src/data/assets/mini-apps/investorphem-abapay.svg",
+      "source": "https://github.com/investorphem/AbaPay",
+      "developer": "@investorphem",
+      "featured": false,
+      "slug": "abapay"
+    },
+    {
       "name": "Cinima",
       "url": "https://cinima.app",
       "type": "nimiq",

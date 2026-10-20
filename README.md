@@ -205,6 +205,7 @@
 
 #### On-chain services
 
+- [AbaPay](https://nim.abapays.com) ([Source](https://github.com/investorphem/AbaPay)) ([@investorphem](https://github.com/investorphem)): Pay bills with NIM: Nigerian airtime, data, electricity, cable TV, exam PINs and bank transfers, plus phone top-ups in 140+ countries.
 - [Rewind](https://rewind-rho.vercel.app) ([Source](https://github.com/Harshyadav442277/rewind)) ([@Harshyadav442277](https://github.com/Harshyadav442277)): Refunds for NIM payments. The buyer signs a one-time request in Nimiq Pay, and the payment and refund are both verified on chain. Try it with a 0.01 NIM demo.
 
 ### EVM
