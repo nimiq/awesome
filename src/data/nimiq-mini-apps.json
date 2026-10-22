@@ -55,6 +55,17 @@
     "featured": false
   },
   {
+    "name": "Darkfall",
+    "url": "https://darkfall.subimpact.net",
+    "type": "nimiq",
+    "category": "Games",
+    "description": "Pixel action RPG: 3 classes, 8 deep dungeons and an endless abyss, random loot, a player-run NIM marketplace, daily trials and a weekly race.",
+    "logo": "./assets/mini-apps/subimpact-darkfall.svg",
+    "source": null,
+    "developer": "@subimpact",
+    "featured": false
+  },
+  {
     "name": "EVM Mini Wallet",
     "url": "https://evm-mini-wallet.vercel.app",
     "type": "evm",
