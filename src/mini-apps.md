@@ -20,6 +20,10 @@
 - [NimBooks](https://nimbooks.subimpact.net) ([Source](https://github.com/subimpact/nimbooks)) ([@subimpact](https://github.com/subimpact)): The books for your Nimiq wallet: balances, history, statements, payment requests, and signed proof-of-payment receipts.
 - [PACT](https://pact-nimiq.vercel.app) ([Source](https://github.com/khaleed0019/pact)) ([@khaleed0019](https://github.com/khaleed0019)): Turn a spoken deal into terms both sides sign with their Nimiq wallet, then track delivery and pay straight from the agreement.
 
+#### Education
+
+- [PROOF](https://proof.nimagent.online) ([Source](https://github.com/LegendaryTunzeverywhere/PROOF)) ([@LegendaryTunzeverywhere](https://github.com/LegendaryTunzeverywhere)): PROOF is a skill verification marketplace, built as a Nimiq mini app. Traditional platforms certify that you watched something. It verifies that you can do a skill and turns it into verifiable income.
+
 #### Shopping & deals
 
 - [NimShop](https://shop.nimiqbase.com) ([Source](https://github.com/emrealt34/nimiqshop)) ([@emrealt34](https://github.com/emrealt34)): Gift cards, eSIMs and mobile top-ups. Pay inside Nimiq Pay with NIM or USDT.
