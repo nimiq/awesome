@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nimiq Swap">
+  <title>Nimiq Swap</title>
+  <!-- Signal Blue commit gradient, same geometry as the host's
+       radial-gradient-light-blue token (origin at the bottom-right corner). -->
+  <defs>
+    <radialGradient id="nimiqBlue" cx="1" cy="1" r="1.4142">
+      <stop offset="0" stop-color="#265DD7" />
+      <stop offset="1" stop-color="#0582CA" />
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#nimiqBlue)" />
+  <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 25h29" />
+    <path d="M39.5 18.5 46 25l-6.5 6.5" />
+    <path d="M47 39H18" />
+    <path d="M24.5 32.5 18 39l6.5 6.5" />
+  </g>
+</svg>

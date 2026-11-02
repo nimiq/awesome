@@ -220,6 +220,17 @@
     "featured": false
   },
   {
+    "name": "SwapSpace",
+    "url": "https://swapspace.nimpay.app/",
+    "type": "nimiq",
+    "category": "Marketplaces",
+    "description": "Swap NIM and USDT with almost any coin, comparing offers from SwapSpace's exchange partners, right in Nimiq Pay",
+    "logo": "./assets/mini-apps/nimiq-swapspace.svg",
+    "source": null,
+    "developer": "@nimiq",
+    "featured": false
+  },
+  {
     "name": "Uniswap",
     "url": "https://app.uniswap.org",
     "type": "evm",
