@@ -88,6 +88,17 @@
     "featured": false
   },
   {
+    "name": "Kuza",
+    "url": "https://kuza.swiftbotlab.workers.dev/",
+    "type": "nimiq",
+    "category": "Earning",
+    "description": "Savings goals that grow in your own NIM stake. Set a goal, stake toward it with a validator, and let friends chip in with a link. Kuza never holds your NIM.",
+    "logo": "./assets/mini-apps/swiftbotlabs-kuza.svg",
+    "source": "https://github.com/swiftbotlabs/kuza",
+    "developer": "@swiftbotlabs",
+    "featured": false
+  },
+  {
     "name": "NimBooks",
     "url": "https://nimbooks.subimpact.net",
     "type": "nimiq",
