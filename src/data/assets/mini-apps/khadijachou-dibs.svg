@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Dibs mark, circle-safe: whole mark inside a centred circle of 64 % width, centred on its area centroid. -->
+  <rect width="1024" height="1024" fill="#E8482A"/>
+  <g fill="#FFF6EC" transform="translate(294.45 229.92) scale(1.96750)">
+    <path fill-rule="evenodd" d="M0 153.5a96 96 0 1 0 192 0a96 96 0 1 0-192 0ZM57.5 153a38.5 38.5 0 1 0 77 0a38.5 38.5 0 1 0-77 0Z"/>
+    <polygon points="135,0 163.5,28.5 192,0 192,246 135,246"/>
+  </g>
+</svg>
