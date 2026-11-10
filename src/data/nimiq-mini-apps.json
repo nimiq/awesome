@@ -77,6 +77,17 @@
     "featured": true
   },
   {
+    "name": "Kitty",
+    "url": "https://kitty-one-orpin.vercel.app",
+    "type": "nimiq",
+    "category": "Productivity",
+    "description": "A goal jar your family and friends chip into: one link, real NIM payments straight to the owner's own wallet, and a public receipt with its on-chain hash for every coin.",
+    "logo": "./assets/mini-apps/memeshee-kitty.svg",
+    "source": "https://github.com/memeshee/kitty",
+    "developer": "@memeshee",
+    "featured": false
+  },
+  {
     "name": "Knock",
     "url": "https://knockchat.org",
     "type": "nimiq",
