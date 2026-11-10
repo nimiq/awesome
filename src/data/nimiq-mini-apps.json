@@ -121,6 +121,17 @@
     "featured": false
   },
   {
+    "name": "NimPoint",
+    "url": "https://nimpoint.vercel.app",
+    "type": "nimiq",
+    "category": "On-chain services",
+    "description": "Every POS stand, a NIM cash point. Cash out NIM to any Nigerian bank or as cash from a local agent, and top up the same way. Verified on-chain.",
+    "logo": "./assets/mini-apps/opeblow-nimpoint.svg",
+    "source": "https://github.com/opeblow/NIMPOINT",
+    "developer": "@opeblow",
+    "featured": false
+  },
+  {
     "name": "NimShop",
     "url": "https://shop.nimiqbase.com",
     "type": "nimiq",
