@@ -88,6 +88,17 @@
     "featured": false
   },
   {
+    "name": "Lemur Blocks",
+    "url": "https://lemurblocks.heylogram.com",
+    "type": "nimiq",
+    "category": "Games",
+    "description": "A pixel lemur climbs from the forest through the ages and eight planets to the top of the world. Mine ore, craft armor, climb the leaderboard and buy looks or extra ore with NIM.",
+    "logo": "./assets/mini-apps/jakalijey-lemur-blocks.svg",
+    "source": null,
+    "developer": "@jakalijey",
+    "featured": false
+  },
+  {
     "name": "NimBooks",
     "url": "https://nimbooks.subimpact.net",
     "type": "nimiq",
