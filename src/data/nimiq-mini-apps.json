@@ -77,6 +77,17 @@
     "featured": true
   },
   {
+    "name": "Kittora",
+    "url": "https://kittora.xyz",
+    "type": "nimiq",
+    "category": "Earning",
+    "description": "Save in USDT that earns and run esusu/ajo savings groups: shares, loans with guarantors, a social fund and Share-Out, with no gas fees",
+    "logo": "./assets/mini-apps/stella112-kittora.svg",
+    "source": "https://github.com/Stella112/kittora",
+    "developer": "@Stella112",
+    "featured": false
+  },
+  {
     "name": "Knock",
     "url": "https://knockchat.org",
     "type": "nimiq",
