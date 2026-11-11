@@ -126,7 +126,7 @@
     "type": "nimiq",
     "category": "Shopping & deals",
     "description": "Gift cards, eSIMs and mobile top-ups. Pay inside Nimiq Pay with NIM or USDT.",
-    "logo": "",
+    "logo": "./assets/mini-apps/emrealt34-nimshop.svg",
     "source": "https://github.com/emrealt34/nimiqshop",
     "developer": "@emrealt34",
     "featured": false
