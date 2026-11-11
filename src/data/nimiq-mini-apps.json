@@ -198,6 +198,17 @@
     "featured": false
   },
   {
+    "name": "Ponte",
+    "url": "https://tryponte.xyz",
+    "type": "nimiq",
+    "category": "On-chain services",
+    "description": "Swap, spend and cash out NIM inside Nimiq Pay: Nigerian bills, airtime and data, European eSIMs, gasless NIM ⇄ USDT swaps, QR payments and P2P cash-out. For Nigeria, Europe and in between.",
+    "logo": "./assets/mini-apps/mrnetwork0001-ponte.svg",
+    "source": "https://github.com/mrnetwork0001/Ponte",
+    "developer": "@mrnetwork0001",
+    "featured": false
+  },
+  {
     "name": "PROOF",
     "url": "https://proof.nimagent.online",
     "type": "nimiq",
