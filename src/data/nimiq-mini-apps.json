@@ -176,6 +176,17 @@
     "featured": false
   },
   {
+    "name": "Payday",
+    "url": "https://efeaizesogie.github.io/payday/",
+    "type": "nimiq",
+    "category": "Earning",
+    "description": "Turn your NIM into a weekly paycheck. See what idle NIM cost you, stake in one tap, get a verifiable payslip, and save together in Circles.",
+    "logo": "./assets/mini-apps/efeaizesogie-payday.svg",
+    "source": "https://github.com/efeaizesogie/payday",
+    "developer": "@efeaizesogie",
+    "featured": false
+  },
+  {
     "name": "PlayNimiq",
     "url": "https://playnimiq.com/",
     "type": "nimiq",
