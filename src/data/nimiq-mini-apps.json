@@ -33,6 +33,17 @@
     "featured": false
   },
   {
+    "name": "CediNest",
+    "url": "https://cedinest.vercel.app",
+    "type": "nimiq",
+    "category": "Earning",
+    "description": "Save USDT in Aave on Polygon and see every balance, goal and gain in Ghana cedis. Stamp a saving whenever you can, pay a tiny NIM fee, and watch your monthly stamp card fill up.",
+    "logo": "./assets/mini-apps/rofyray-cedinest.svg",
+    "source": "https://github.com/rofyray/cedinest",
+    "developer": "@rofyray",
+    "featured": false
+  },
+  {
     "name": "Cinima",
     "url": "https://cinima.app",
     "type": "nimiq",
