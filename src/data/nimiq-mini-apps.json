@@ -77,6 +77,17 @@
     "featured": true
   },
   {
+    "name": "Hive",
+    "url": "https://hive.heylogram.com",
+    "type": "nimiq",
+    "category": "Creator tools",
+    "description": "Every name registered on Pigeon gets a cell: publish your site or app, sign its settings with your wallet, see who visits and take NIM tips straight to your wallet.",
+    "logo": "./assets/mini-apps/jakalijey-hive.svg",
+    "source": "https://github.com/jakalijey/pigeon/tree/main/hive",
+    "developer": "@jakalijey",
+    "featured": false
+  },
+  {
     "name": "Knock",
     "url": "https://knockchat.org",
     "type": "nimiq",
