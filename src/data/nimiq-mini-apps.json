@@ -231,6 +231,17 @@
     "featured": true
   },
   {
+    "name": "Thence",
+    "url": "https://paywiththence.cv",
+    "type": "nimiq",
+    "category": "On-chain services",
+    "description": "Recipient-first cross-chain payments: pay with NIM in Nimiq Pay and your recipient receives USDC on a supported blockchain such as Polygon.",
+    "logo": "./assets/mini-apps/kaelah971-thence.svg",
+    "source": "https://github.com/kaelah971/thence",
+    "developer": "@kaelah971",
+    "featured": false
+  },
+  {
     "name": "Uniswap",
     "url": "https://app.uniswap.org",
     "type": "evm",
