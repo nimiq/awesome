@@ -77,6 +77,17 @@
     "featured": true
   },
   {
+    "name": "Ferry",
+    "url": "https://ferry-beta.vercel.app",
+    "type": "nimiq",
+    "category": "On-chain services",
+    "description": "Cash out NIM or USDT to banks, mobile money and airtime in 13 countries. Compare offers, approve once, and see the receipt when it lands.",
+    "logo": "./assets/mini-apps/manuel-dev01-ferry.svg",
+    "source": "https://github.com/Manuel-dev01/ferry",
+    "developer": "@Manuel-dev01",
+    "featured": false
+  },
+  {
     "name": "Knock",
     "url": "https://knockchat.org",
     "type": "nimiq",
