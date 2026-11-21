@@ -66,6 +66,17 @@
     "featured": false
   },
   {
+    "name": "Dibs",
+    "url": "https://dibs-sepia.vercel.app",
+    "type": "nimiq",
+    "category": "Earning",
+    "description": "Save NIM for a gift card. Your NIM is staked and earns while you wait, then you get the card in Nimiq Pay.",
+    "logo": "./assets/mini-apps/khadijachou-dibs.svg",
+    "source": "https://github.com/khadijachou/dibs",
+    "developer": "@khadijachou",
+    "featured": false
+  },
+  {
     "name": "EVM Mini Wallet",
     "url": "https://evm-mini-wallet.vercel.app",
     "type": "evm",
