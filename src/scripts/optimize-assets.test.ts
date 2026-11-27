@@ -10,9 +10,11 @@ const temporaryDirectory = mkdtempSync(join(tmpdir(), 'awesome-optimize-assets-'
 const assetsDirectory = join(temporaryDirectory, 'data/assets')
 const mixedPaintsPath = join(assetsDirectory, 'mixed-paints.svg')
 const singlePaintPath = join(assetsDirectory, 'single-paint.svg')
+const miniAppLogoPath = join(assetsDirectory, 'mini-apps/dev-single-color.svg')
 
 try {
-  mkdirSync(assetsDirectory, { recursive: true })
+  mkdirSync(join(assetsDirectory, 'mini-apps'), { recursive: true })
+  writeFileSync(miniAppLogoPath, '<svg xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" fill="#f7931a"/></svg>')
   writeFileSync(mixedPaintsPath, '<svg xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" fill="#1c1f33"/><path fill="none" stroke="#E5C158" d="M1 1h30"/></svg>')
   writeFileSync(singlePaintPath, '<svg xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" fill="#123456"/><path fill="none" stroke="#123456" d="M1 1h30"/></svg>')
   process.chdir(temporaryDirectory)
@@ -26,6 +28,10 @@ try {
   const mixedPaintsSvg = readFileSync(mixedPaintsPath, 'utf8')
   assert.match(mixedPaintsSvg, /fill="#1c1f33"/)
   assert.doesNotMatch(mixedPaintsSvg, /currentColor/i)
+
+  const miniAppLogoSvg = readFileSync(miniAppLogoPath, 'utf8')
+  assert.match(miniAppLogoSvg, /fill="#f7931a"/)
+  assert.doesNotMatch(miniAppLogoSvg, /currentColor/i)
 }
 finally {
   process.chdir(originalCwd)

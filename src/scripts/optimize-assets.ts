@@ -65,7 +65,9 @@ async function optimizeSvg(filePath: string): Promise<OptimizationResult> {
 
   // Files to keep original color (white)
   const keepColorFiles = ['accept-donations.svg', 'nim-world.svg', 'nimiq-multisig-wallet.svg', 'crypto-payment-logo.svg']
-  const shouldKeepColor = keepColorFiles.some(file => filePath.includes(file))
+  // Mini App logos are shown through <img>, where currentColor renders black
+  const isMiniAppLogo = filePath.includes('/mini-apps/')
+  const shouldKeepColor = isMiniAppLogo || keepColorFiles.some(file => filePath.includes(file))
 
   // Detect colors before optimization
   const colors = detectPaintColors(content)
